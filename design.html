@@ -1,0 +1,1536 @@
+<!-- Приветствие -->
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Твой ИИ-карьерный ментор</title>
+<!-- Google Fonts: Manrope (Headlines) & Inter (Body/Labels) -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Theme Config from Style Guidance -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary": "#9e3d00",
+                        "surface-variant": "#e3e2e7",
+                        "on-primary-fixed-variant": "#004493",
+                        "secondary-container": "#6ffb85",
+                        "primary-container": "#0070eb",
+                        "on-primary-fixed": "#001a41",
+                        "on-secondary-container": "#00732a",
+                        "on-tertiary-container": "#fffbff",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#fefcff",
+                        "on-tertiary-fixed-variant": "#7c2e00",
+                        "on-tertiary-fixed": "#351000",
+                        "outline-variant": "#c1c6d7",
+                        "on-background": "#1a1b1f",
+                        "surface-container-low": "#f4f3f8",
+                        "on-error-container": "#93000a",
+                        "secondary": "#006e28",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eeedf3",
+                        "on-surface-variant": "#414755",
+                        "surface-container-highest": "#e3e2e7",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dad9df",
+                        "inverse-primary": "#adc6ff",
+                        "secondary-fixed-dim": "#53e16f",
+                        "surface": "#faf9fe",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#72fe88",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#adc6ff",
+                        "outline": "#717786",
+                        "surface-container-high": "#e9e7ed",
+                        "primary-fixed": "#d8e2ff",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "tertiary-fixed": "#ffdbcc",
+                        "inverse-on-surface": "#f1f0f5",
+                        "inverse-surface": "#2f3034",
+                        "on-surface": "#1a1b1f",
+                        "on-secondary-fixed": "#002107",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#faf9fe",
+                        "tertiary-container": "#c64f00",
+                        "background": "#faf9fe",
+                        "primary": "#0058bc",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#005bc1",
+                        "on-secondary-fixed-variant": "#00531c"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "lg": "40px",
+                        "xl": "64px",
+                        "sm": "12px",
+                        "md": "24px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "container-max": "1200px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "label-md": ["Inter"]
+                    },
+                    fontSize: {
+                        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "label-sm": ["12px", { lineHeight: "16px", fontWeight: "500" }],
+                        "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }],
+                        "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "800" }],
+                        "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }]
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'sparkle': 'sparkle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        sparkle: {
+                            '0%, 100%': { opacity: '0.5', transform: 'scale(0.8)' },
+                            '50%': { opacity: '1', transform: 'scale(1.2)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Duolingo style button active state mechanics */
+        .btn-duo {
+            box-shadow: 0 8px 0 0 #0058bc; /* Using primary color for shadow */
+            transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-duo:active {
+            transform: translateY(8px);
+            box-shadow: 0 0 0 0 #0058bc;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-low text-on-surface min-h-screen font-body-md antialiased overflow-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Mobile Container (Max width for fluid scaling, centered) -->
+<main class="max-w-[480px] mx-auto min-h-[100dvh] flex flex-col relative px-md">
+<!-- Ambient Background Glow -->
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-primary-fixed blur-[100px] opacity-40 rounded-full pointer-events-none z-0"></div>
+<!-- Main Content Area -->
+<div class="flex-grow flex flex-col items-center justify-center gap-xl relative z-10 pt-xl">
+<!-- AI Mentor Visual Component -->
+<div class="relative flex items-center justify-center animate-float">
+<!-- Inner soft gradient circle behind bot -->
+<div class="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-tr from-primary-fixed-dim to-inverse-primary shadow-[0px_4px_24px_rgba(0,112,235,0.15)] flex items-center justify-center border-4 border-surface-container-lowest">
+<span class="material-symbols-outlined text-[72px] md:text-[88px] text-primary-container" style="font-variation-settings: &quot;FILL&quot; 1;">
+                        smart_toy
+                    </span>
+</div>
+<!-- Decorative Sparkles -->
+
+<span class="material-symbols-outlined absolute bottom-4 -left-6 text-[24px] text-primary-container animate-sparkle">
+                    auto_awesome
+                </span>
+</div>
+<!-- Typography Header -->
+<div class="text-center flex flex-col gap-sm">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">
+                    Твой ИИ-карьерный ментор
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[280px] mx-auto">
+                    Давай построим карьеру твоей мечты шаг за шагом.
+                </p>
+</div>
+</div>
+<!-- Sticky Action Bottom Area -->
+<div class="w-full pb-xl pt-lg relative z-20 mt-auto">
+<button class="w-full bg-primary-container text-on-primary-container font-headline-md text-headline-md py-4 rounded-full btn-duo flex items-center justify-center hover:bg-surface-tint focus:outline-none focus:ring-4 focus:ring-primary-fixed-dim">
+                Начать
+            </button>
+</div>
+</main>
+<!-- Navigation is intentionally omitted per rules: Transactional/Onboarding screen -->
+<!-- FAB is intentionally omitted per rules: Does not align with primary action of this specific screen -->
+
+
+</body></html>
+
+<!-- Онбординг -->
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Настройка профиля - Onboarding</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#9e3d00",
+                    "surface-variant": "#e3e2e7",
+                    "on-primary-fixed-variant": "#004493",
+                    "secondary-container": "#6ffb85",
+                    "primary-container": "#0070eb",
+                    "on-primary-fixed": "#001a41",
+                    "on-secondary-container": "#00732a",
+                    "on-tertiary-container": "#fffbff",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#fefcff",
+                    "on-tertiary-fixed-variant": "#7c2e00",
+                    "on-tertiary-fixed": "#351000",
+                    "outline-variant": "#c1c6d7",
+                    "on-background": "#1a1b1f",
+                    "surface-container-low": "#f4f3f8",
+                    "on-error-container": "#93000a",
+                    "secondary": "#006e28",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#eeedf3",
+                    "on-surface-variant": "#414755",
+                    "surface-container-highest": "#e3e2e7",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#dad9df",
+                    "inverse-primary": "#adc6ff",
+                    "secondary-fixed-dim": "#53e16f",
+                    "surface": "#faf9fe",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#72fe88",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#adc6ff",
+                    "outline": "#717786",
+                    "surface-container-high": "#e9e7ed",
+                    "primary-fixed": "#d8e2ff",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "tertiary-fixed": "#ffdbcc",
+                    "inverse-on-surface": "#f1f0f5",
+                    "inverse-surface": "#2f3034",
+                    "on-surface": "#1a1b1f",
+                    "on-secondary-fixed": "#002107",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#faf9fe",
+                    "tertiary-container": "#c64f00",
+                    "background": "#faf9fe",
+                    "primary": "#0058bc",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#005bc1",
+                    "on-secondary-fixed-variant": "#00531c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "40px",
+                    "xl": "64px",
+                    "sm": "12px",
+                    "md": "24px",
+                    "base": "8px",
+                    "xs": "4px",
+                    "container-max": "1200px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Manrope"],
+                    "body-lg": ["Inter"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-lg": ["Manrope"],
+                    "display-lg": ["Manrope"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        /* Custom micro-animations for typing indicator */
+        @keyframes typing-dot {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+            30% { transform: translateY(-4px); opacity: 1; }
+        }
+        .animate-typing-1 { animation: typing-dot 1.4s infinite ease-in-out both; }
+        .animate-typing-2 { animation: typing-dot 1.4s infinite ease-in-out both 0.2s; }
+        .animate-typing-3 { animation: typing-dot 1.4s infinite ease-in-out both 0.4s; }
+        
+        /* Ambient card shadow */
+        .ambient-shadow {
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.02);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-low text-on-surface antialiased min-h-screen flex flex-col font-body-md">
+<!-- TopAppBar (Adapted for Onboarding) -->
+<!-- Applying structural rules from JSON TopAppBar component while overriding content for this specific flow -->
+<header class="sticky top-0 w-full z-50 flex justify-between items-center px-md py-sm bg-surface/80 backdrop-blur-xl shadow-sm">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-variant/50 transition-all duration-200 active:scale-95 text-on-surface-variant group">
+<span class="material-symbols-outlined text-[24px] group-active:text-primary transition-colors" data-weight="regular">arrow_back</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary truncate flex-1 text-center px-sm">
+            Настройка профиля
+        </h1>
+<div class="w-10 h-10 flex items-center justify-center">
+<span class="font-label-md text-label-md text-outline font-semibold tracking-widest bg-surface-variant/40 px-3 py-1 rounded-full">1/3</span>
+</div>
+</header>
+<!-- Main Chat Canvas -->
+<main class="flex-1 w-full max-w-container-max mx-auto px-md py-lg flex flex-col gap-lg pb-[120px] relative">
+<!-- AI Message Bubble -->
+<div class="flex flex-col items-start w-full max-w-[85%] md:max-w-xl animate-[fadeIn_0.5s_ease-out]">
+<div class="flex items-end gap-sm">
+<!-- AI Avatar -->
+<div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary-container to-primary flex items-center justify-center shrink-0 ambient-shadow">
+<span class="material-symbols-outlined text-on-primary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">robot_2</span>
+</div>
+<!-- Chat Card -->
+<div class="bg-surface-container-lowest p-md rounded-[24px] rounded-bl-sm ambient-shadow relative overflow-hidden group">
+<!-- Subtle glass gleam -->
+<div class="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                        Привет! 👋<br/>
+                        Какой у тебя сейчас уровень опыта?
+                    </p>
+</div>
+</div>
+</div>
+<!-- User Quick Replies Container (Asymmetric layout) -->
+<div class="flex flex-wrap gap-sm justify-end w-full animate-[fadeIn_0.5s_ease-out_0.2s_both]">
+<button class="bg-primary-container/10 border border-primary-container/20 hover:bg-primary-container/20 hover:border-primary/30 text-primary font-label-md text-label-md px-md py-sm rounded-full transition-all duration-200 active:scale-95 ambient-shadow">
+                Студент
+            </button>
+<button class="bg-primary-container/10 border border-primary-container/20 hover:bg-primary-container/20 hover:border-primary/30 text-primary font-label-md text-label-md px-md py-sm rounded-full transition-all duration-200 active:scale-95 ambient-shadow">
+                Выпускник
+            </button>
+<button class="bg-primary-container/10 border border-primary-container/20 hover:bg-primary-container/20 hover:border-primary/30 text-primary font-label-md text-label-md px-md py-sm rounded-full transition-all duration-200 active:scale-95 ambient-shadow">
+                Junior
+            </button>
+<button class="bg-primary-container/10 border border-primary-container/20 hover:bg-primary-container/20 hover:border-primary/30 text-primary font-label-md text-label-md px-md py-sm rounded-full transition-all duration-200 active:scale-95 ambient-shadow">
+                Самоучка
+            </button>
+<button class="bg-primary-container/10 border border-primary-container/20 hover:bg-primary-container/20 hover:border-primary/30 text-primary font-label-md text-label-md px-md py-sm rounded-full transition-all duration-200 active:scale-95 ambient-shadow">
+                Меняю профессию
+            </button>
+</div>
+<!-- AI Typing Indicator -->
+<div class="flex flex-col items-start w-full max-w-[85%] md:max-w-xl animate-[fadeIn_0.5s_ease-out_0.6s_both]">
+<div class="flex items-end gap-sm opacity-80">
+<!-- Ghost Avatar -->
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">robot_2</span>
+</div>
+<!-- Typing Bubbles -->
+<div class="bg-surface-container-highest px-md py-sm h-12 rounded-[24px] rounded-bl-sm flex gap-2 items-center ambient-shadow">
+<div class="w-2 h-2 bg-on-surface-variant rounded-full animate-typing-1"></div>
+<div class="w-2 h-2 bg-on-surface-variant rounded-full animate-typing-2"></div>
+<div class="w-2 h-2 bg-on-surface-variant rounded-full animate-typing-3"></div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Primary Action (Pill Button) -->
+<!-- Positioned fixed at bottom with gradient mask to blend into content -->
+<div class="fixed bottom-0 left-0 w-full z-40 px-md pb-lg pt-xl bg-gradient-to-t from-surface-container-low via-surface-container-low/90 to-transparent flex justify-center pointer-events-none">
+<button class="pointer-events-auto w-full max-w-sm bg-primary text-on-primary font-label-md text-label-md py-4 px-xl rounded-full shadow-[0px_8px_24px_rgba(0,88,188,0.3)] hover:bg-surface-tint hover:shadow-[0px_12px_32px_rgba(0,88,188,0.4)] active:scale-[0.98] transition-all duration-300 text-center flex items-center justify-center gap-2 group">
+            Продолжить
+            <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- Note: BottomNavBar is intentionally suppressed as per rule: Linear/Transactional Onboarding flow -->
+</body></html>
+
+<!-- Выбор онбординга -->
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Career Strategist - Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#f1f0f5",
+                        "primary-fixed": "#d8e2ff",
+                        "surface-container-low": "#f4f3f8",
+                        "on-background": "#1a1b1f",
+                        "on-primary-container": "#fefcff",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#00732a",
+                        "on-tertiary-container": "#fffbff",
+                        "surface-variant": "#e3e2e7",
+                        "outline-variant": "#c1c6d7",
+                        "surface": "#faf9fe",
+                        "outline": "#717786",
+                        "on-secondary-fixed": "#002107",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#9e3d00",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#c64f00",
+                        "surface-dim": "#dad9df",
+                        "secondary": "#006e28",
+                        "tertiary-fixed": "#ffdbcc",
+                        "surface-container-high": "#e9e7ed",
+                        "on-tertiary-fixed-variant": "#7c2e00",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#414755",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#6ffb85",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#72fe88",
+                        "primary-container": "#0070eb",
+                        "on-primary-fixed-variant": "#004493",
+                        "on-primary-fixed": "#001a41",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "inverse-surface": "#2f3034",
+                        "surface-bright": "#faf9fe",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#351000",
+                        "surface-container": "#eeedf3",
+                        "primary": "#0058bc",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-secondary-fixed-variant": "#00531c",
+                        "inverse-primary": "#adc6ff",
+                        "on-surface": "#1a1b1f",
+                        "surface-tint": "#005bc1",
+                        "surface-container-highest": "#e3e2e7",
+                        "secondary-fixed-dim": "#53e16f",
+                        "background": "#faf9fe"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "md": "24px",
+                        "lg": "40px",
+                        "xl": "64px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    },
+                    "boxShadow": {
+                        'ambient': '0px 4px 12px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.02)',
+                        'ambient-hover': '0px 8px 24px rgba(0, 0, 0, 0.08), 0px 2px 4px rgba(0, 0, 0, 0.04)',
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            -webkit-tap-highlight-color: transparent;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-low min-h-screen text-on-surface antialiased flex flex-col md:max-w-md md:mx-auto md:shadow-2xl md:border-x md:border-surface-variant relative overflow-hidden">
+<!-- Ambient background gradient -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary-fixed/20 to-transparent pointer-events-none z-0"></div>
+<!-- TopAppBar JSON Component -->
+<header class="sticky top-0 w-full z-50 flex justify-between items-center px-md py-sm bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl shadow-sm">
+<button aria-label="Go back" class="p-2 -ml-2 rounded-full hover:bg-surface-variant/50 transition-all duration-200 active:scale-95 text-on-surface">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</button>
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+<!-- Headline suppressed for onboarding purity, keeping space if needed later -->
+</div>
+<div class="text-on-surface-variant font-label-md text-label-md">
+            1/3
+        </div>
+</header>
+<main class="flex-1 flex flex-col px-md pt-lg pb-xl z-10">
+<!-- Header Section -->
+<section class="mb-xl text-center space-y-sm">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Как нам лучше познакомиться?</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Выберите удобный способ, чтобы ИИ составил вашу персональную стратегию.</p>
+</section>
+<!-- Options Section -->
+<section class="flex flex-col gap-md">
+<!-- Option 1: Upload Resume -->
+<button class="group relative w-full text-left bg-surface-container-lowest rounded-3xl p-md shadow-ambient hover:shadow-ambient-hover transition-all duration-300 active:scale-[0.98] border border-transparent hover:border-primary/20 focus:outline-none focus:border-primary overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="relative z-10 flex flex-col items-center text-center space-y-sm">
+<div class="w-16 h-16 rounded-2xl bg-primary-container/10 flex items-center justify-center text-primary mb-2 group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 0;">upload_file</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Загрузить резюме</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">ИИ проанализирует ваш опыт автоматически за пару секунд.</p>
+</div>
+</button>
+<!-- Option 2: Chat with AI -->
+<button class="group relative w-full text-left bg-surface-container-lowest rounded-3xl p-md shadow-ambient hover:shadow-ambient-hover transition-all duration-300 active:scale-[0.98] border border-transparent hover:border-primary/20 focus:outline-none focus:border-primary overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-secondary-container/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="relative z-10 flex flex-col items-center text-center space-y-sm">
+<div class="w-16 h-16 rounded-2xl bg-primary-container/10 flex items-center justify-center text-primary mb-2 group-hover:bg-primary group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 0;">forum</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Пообщаться с ИИ</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Ответьте на несколько вопросов в формате чата.</p>
+</div>
+</button>
+</section>
+</main>
+<!-- BottomNavBar is suppressed as this is a transactional onboarding screen -->
+</body></html>
+
+<!-- Вакансии -->
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Jobs Matcher</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Smooth transitions for card physics */
+        .card-physics {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .dragging {
+            transition: none !important;
+        }
+        
+        /* Hide scrollbar for a cleaner app feel */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary": "#9e3d00",
+                        "surface-variant": "#e3e2e7",
+                        "on-primary-fixed-variant": "#004493",
+                        "secondary-container": "#6ffb85",
+                        "primary-container": "#0070eb",
+                        "on-primary-fixed": "#001a41",
+                        "on-secondary-container": "#00732a",
+                        "on-tertiary-container": "#fffbff",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#fefcff",
+                        "on-tertiary-fixed-variant": "#7c2e00",
+                        "on-tertiary-fixed": "#351000",
+                        "outline-variant": "#c1c6d7",
+                        "on-background": "#1a1b1f",
+                        "surface-container-low": "#f4f3f8",
+                        "on-error-container": "#93000a",
+                        "secondary": "#006e28",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eeedf3",
+                        "on-surface-variant": "#414755",
+                        "surface-container-highest": "#e3e2e7",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#dad9df",
+                        "inverse-primary": "#adc6ff",
+                        "secondary-fixed-dim": "#53e16f",
+                        "surface": "#faf9fe",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#72fe88",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#adc6ff",
+                        "outline": "#717786",
+                        "surface-container-high": "#e9e7ed",
+                        "primary-fixed": "#d8e2ff",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "tertiary-fixed": "#ffdbcc",
+                        "inverse-on-surface": "#f1f0f5",
+                        "inverse-surface": "#2f3034",
+                        "on-surface": "#1a1b1f",
+                        "on-secondary-fixed": "#002107",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#faf9fe",
+                        "tertiary-container": "#c64f00",
+                        "background": "#faf9fe",
+                        "primary": "#0058bc",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#005bc1",
+                        "on-secondary-fixed-variant": "#00531c"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem"
+                    },
+                    spacing: {
+                        "lg": "40px",
+                        "xl": "64px",
+                        "sm": "12px",
+                        "md": "24px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "container-max": "1200px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "label-md": ["Inter"]
+                    },
+                    fontSize: {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }]
+                    },
+                    boxShadow: {
+                        'ambient': '0px 4px 12px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.02)',
+                        'ambient-lg': '0px 8px 24px rgba(0, 0, 0, 0.08), 0px 2px 4px rgba(0, 0, 0, 0.04)',
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background h-screen w-full flex flex-col overflow-hidden font-body-md antialiased select-none">
+<!-- TopAppBar from JSON -->
+<header class="sticky top-0 w-full z-50 flex justify-between items-center px-md py-sm bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl shadow-sm transition-all duration-200">
+<button class="flex items-center justify-center p-2 rounded-full hover:opacity-80 active:scale-95 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+            Карьера
+        </h1>
+<div class="flex items-center justify-center p-2 text-on-surface-variant font-label-md">
+            3/5
+        </div>
+</header>
+<!-- Main Content Area: Swipeable Cards Canvas -->
+<main class="flex-1 relative w-full flex flex-col items-center justify-center px-md pb-xl overflow-hidden touch-none" id="swipe-container">
+<!-- Stacked Card (Background 2) -->
+<div class="absolute w-[calc(100%-48px)] max-w-sm h-[500px] bg-surface-container-lowest rounded-3xl shadow-ambient border border-surface-variant/50 flex flex-col p-md opacity-0 scale-90 translate-y-12 transition-all duration-500 ease-out z-10" id="card-3">
+<div class="w-full h-full bg-surface-container-high rounded-xl animate-pulse"></div>
+</div>
+<!-- Stacked Card (Background 1) -->
+<div class="absolute w-[calc(100%-48px)] max-w-sm h-[500px] bg-surface-container-lowest rounded-3xl shadow-ambient border border-surface-variant/50 flex flex-col p-md scale-95 translate-y-4 transition-all duration-500 ease-out z-20" id="card-2">
+<div class="w-full h-full bg-surface-container rounded-xl flex items-center justify-center opacity-50">
+<span class="material-symbols-outlined text-4xl text-outline-variant">hourglass_empty</span>
+</div>
+</div>
+<!-- Main Interactive Card (Foreground) -->
+<div class="absolute w-[calc(100%-48px)] max-w-sm h-[500px] bg-surface-container-lowest rounded-3xl shadow-ambient-lg border border-surface-variant/30 flex flex-col p-md z-30 card-physics cursor-grab active:cursor-grabbing origin-bottom" id="card-1">
+<!-- Company & Role Header -->
+<div class="flex items-start gap-sm mb-md">
+<div class="w-16 h-16 rounded-2xl bg-surface-container flex items-center justify-center shrink-0 border border-surface-variant/50">
+<span class="material-symbols-outlined text-3xl text-outline-variant" data-icon="domain">domain</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface leading-tight mb-xs">Junior Frontend Developer</h2>
+<p class="font-label-md text-label-md text-outline">TechFlow Corp • Remote</p>
+</div>
+</div>
+<!-- Salary & Match Badge -->
+<div class="flex items-center justify-between mb-lg border-b border-surface-variant/50 pb-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-xs">Ожидаемая З/П</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">120k - 150k ₽</span>
+</div>
+<div class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded-full font-label-md flex items-center gap-xs shadow-sm">
+<span class="material-symbols-outlined filled text-[16px]">auto_awesome</span>
+                    95% Совпадение
+                </div>
+</div>
+<!-- Skills Analysis -->
+<div class="flex-1 flex flex-col overflow-hidden">
+<h3 class="font-label-md text-label-md text-on-surface-variant mb-sm">Анализ навыков</h3>
+<div class="flex-1 overflow-y-auto pr-xs space-y-md">
+<!-- Matched Skills -->
+<div>
+<div class="flex items-center gap-xs mb-xs text-secondary font-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Совпадает (4)</span>
+</div>
+<div class="flex flex-wrap gap-xs">
+<span class="bg-primary/10 text-primary-fixed-variant px-3 py-1 rounded-full font-label-sm">JavaScript</span>
+<span class="bg-primary/10 text-primary-fixed-variant px-3 py-1 rounded-full font-label-sm">React</span>
+<span class="bg-primary/10 text-primary-fixed-variant px-3 py-1 rounded-full font-label-sm">Tailwind CSS</span>
+<span class="bg-primary/10 text-primary-fixed-variant px-3 py-1 rounded-full font-label-sm">Git</span>
+</div>
+</div>
+<!-- Missing Skills -->
+<div>
+<div class="flex items-center gap-xs mb-xs text-error font-label-sm">
+<span class="material-symbols-outlined text-[16px]">error</span>
+<span>Нужно подтянуть (2)</span>
+</div>
+<div class="flex flex-wrap gap-xs">
+<span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full font-label-sm opacity-80">TypeScript</span>
+<span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full font-label-sm opacity-80">Redux Toolkit</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Overlay indicators for swipe direction -->
+<div class="absolute inset-0 rounded-3xl pointer-events-none opacity-0 transition-opacity duration-200 flex items-center justify-center p-md" id="swipe-overlay-like">
+<div class="w-full h-full border-4 border-secondary rounded-2xl flex items-start justify-end p-sm">
+<span class="text-secondary font-display-lg border-2 border-secondary rounded-lg px-2 rotate-12 bg-surface-container-lowest/80 backdrop-blur-sm">ДА</span>
+</div>
+</div>
+<div class="absolute inset-0 rounded-3xl pointer-events-none opacity-0 transition-opacity duration-200 flex items-center justify-center p-md" id="swipe-overlay-nope">
+<div class="w-full h-full border-4 border-error rounded-2xl flex items-start justify-start p-sm">
+<span class="text-error font-display-lg border-2 border-error rounded-lg px-2 -rotate-12 bg-surface-container-lowest/80 backdrop-blur-sm">НЕТ</span>
+</div>
+</div>
+</div>
+<!-- Floating Action Buttons -->
+<div class="absolute bottom-xl w-full max-w-sm px-xl flex justify-between items-center z-40 mb-md pointer-events-none">
+<button class="pointer-events-auto w-16 h-16 rounded-full bg-surface-container-lowest shadow-ambient border-2 border-error text-error flex items-center justify-center transition-transform active:scale-90 hover:bg-error-container/20" id="btn-reject">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<button class="pointer-events-auto w-12 h-12 rounded-full bg-surface-container-lowest shadow-ambient border border-surface-variant text-outline flex items-center justify-center transition-transform active:scale-90 hover:bg-surface-variant/50">
+<span class="material-symbols-outlined text-xl filled text-primary">bookmark</span>
+</button>
+<button class="pointer-events-auto w-16 h-16 rounded-full bg-surface-container-lowest shadow-ambient border-2 border-secondary text-secondary flex items-center justify-center transition-transform active:scale-90 hover:bg-secondary-container/20" id="btn-accept">
+<span class="material-symbols-outlined text-3xl">favorite</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar from JSON -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-md pb-base pt-xs bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl shadow-[0px_-4px_12px_rgba(0,0,0,0.05)]">
+<!-- Tab 0: Стратегия (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline transition-all duration-300 active:scale-90 hover:bg-surface-variant/50 rounded-lg p-2 w-16" href="#">
+<span class="material-symbols-outlined" data-icon="tactic">tactic</span>
+<span class="font-label-sm text-[10px] mt-1 truncate w-full text-center">Стратегия</span>
+</a>
+<!-- Tab 1: Вакансии (Active based on Semantic Mapping) -->
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed bg-primary-container/20 dark:bg-primary-container/10 rounded-full px-md py-xs transition-all duration-300 active:scale-90 hover:opacity-80" href="#">
+<span class="material-symbols-outlined filled" data-icon="work">work</span>
+<span class="font-label-sm text-label-sm mt-1">Вакансии</span>
+</a>
+<!-- Tab 2: Профиль (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline transition-all duration-300 active:scale-90 hover:bg-surface-variant/50 rounded-lg p-2 w-16" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-[10px] mt-1 truncate w-full text-center">Профиль</span>
+</a>
+</nav>
+<!-- Basic Swipe Logic -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const card = document.getElementById('card-1');
+            const card2 = document.getElementById('card-2');
+            const overlayLike = document.getElementById('swipe-overlay-like');
+            const overlayNope = document.getElementById('swipe-overlay-nope');
+            const btnReject = document.getElementById('btn-reject');
+            const btnAccept = document.getElementById('btn-accept');
+            
+            let isDragging = false;
+            let startX = 0;
+            let startY = 0;
+            let currentX = 0;
+            let currentY = 0;
+            
+            const SWIPE_THRESHOLD = 100; // pixels to trigger action
+            
+            function handleStart(e) {
+                isDragging = true;
+                card.classList.add('dragging');
+                
+                const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+                const clientY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+                
+                startX = clientX - currentX;
+                startY = clientY - currentY;
+            }
+            
+            function handleMove(e) {
+                if (!isDragging) return;
+                e.preventDefault(); // Prevent scrolling
+                
+                const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+                const clientY = e.type.includes('mouse') ? e.clientY : e.touches[0].clientY;
+                
+                currentX = clientX - startX;
+                currentY = clientY - startY;
+                
+                // Calculate rotation based on X movement
+                const rotation = currentX * 0.05;
+                
+                // Apply transform
+                card.style.transform = `translate(${currentX}px, ${currentY}px) rotate(${rotation}deg)`;
+                
+                // Handle overlays and background card scaling
+                const progress = Math.min(Math.abs(currentX) / SWIPE_THRESHOLD, 1);
+                
+                if (currentX > 0) {
+                    overlayLike.style.opacity = progress;
+                    overlayNope.style.opacity = 0;
+                } else {
+                    overlayNope.style.opacity = progress;
+                    overlayLike.style.opacity = 0;
+                }
+                
+                // Slightly bring forward background card
+                if (card2) {
+                    const scale = 0.95 + (progress * 0.05);
+                    const translateY = 4 - (progress * 4); // tailwind classes use rem usually, simulating pixel offset visually
+                    card2.style.transform = `scale(${scale}) translateY(${translateY}px)`;
+                }
+            }
+            
+            function handleEnd() {
+                if (!isDragging) return;
+                isDragging = false;
+                card.classList.remove('dragging');
+                
+                if (Math.abs(currentX) > SWIPE_THRESHOLD) {
+                    // Swiped away
+                    const direction = currentX > 0 ? 1 : -1;
+                    const finalX = window.innerWidth * direction;
+                    const finalRotation = 30 * direction;
+                    
+                    card.style.transform = `translate(${finalX}px, ${currentY}px) rotate(${finalRotation}deg)`;
+                    card.style.opacity = '0';
+                    
+                    // Reset or load new card logic here (simulated by resetting after delay)
+                    setTimeout(() => {
+                        resetCard(true);
+                    }, 300);
+                    
+                } else {
+                    // Snap back
+                    resetCard(false);
+                }
+            }
+            
+            function resetCard(simulateNewCard = false) {
+                currentX = 0;
+                currentY = 0;
+                card.style.transform = '';
+                overlayLike.style.opacity = 0;
+                overlayNope.style.opacity = 0;
+                
+                if (card2) {
+                    card2.style.transform = ''; // reset to CSS defined state
+                }
+                
+                if (simulateNewCard) {
+                    // Quick flash to simulate new card loading
+                    card.style.transition = 'none';
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.95) translateY(10px)';
+                    
+                    setTimeout(() => {
+                        card.style.transition = 'all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                        card.style.opacity = '1';
+                        card.style.transform = 'scale(1) translateY(0)';
+                    }, 50);
+                }
+            }
+
+            // Event Listeners for Card
+            card.addEventListener('mousedown', handleStart);
+            document.addEventListener('mousemove', handleMove, { passive: false });
+            document.addEventListener('mouseup', handleEnd);
+            
+            card.addEventListener('touchstart', handleStart, { passive: true });
+            document.addEventListener('touchmove', handleMove, { passive: false });
+            document.addEventListener('touchend', handleEnd);
+
+            // Button controls
+            btnReject.addEventListener('click', () => {
+                card.classList.remove('card-physics');
+                card.style.transition = 'transform 0.4s ease-out, opacity 0.3s ease-out';
+                card.style.transform = `translate(-${window.innerWidth}px, 50px) rotate(-30deg)`;
+                card.style.opacity = '0';
+                setTimeout(() => {
+                    card.classList.add('card-physics');
+                    resetCard(true);
+                }, 400);
+            });
+
+            btnAccept.addEventListener('click', () => {
+                card.classList.remove('card-physics');
+                card.style.transition = 'transform 0.4s ease-out, opacity 0.3s ease-out';
+                card.style.transform = `translate(${window.innerWidth}px, 50px) rotate(30deg)`;
+                card.style.opacity = '0';
+                setTimeout(() => {
+                    card.classList.add('card-physics');
+                    resetCard(true);
+                }, 400);
+            });
+        });
+    </script>
+</body></html>
+
+<!-- Стратегия -->
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Стратегия</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary": "#9e3d00",
+                      "surface-variant": "#e3e2e7",
+                      "on-primary-fixed-variant": "#004493",
+                      "secondary-container": "#6ffb85",
+                      "primary-container": "#0070eb",
+                      "on-primary-fixed": "#001a41",
+                      "on-secondary-container": "#00732a",
+                      "on-tertiary-container": "#fffbff",
+                      "error-container": "#ffdad6",
+                      "on-primary-container": "#fefcff",
+                      "on-tertiary-fixed-variant": "#7c2e00",
+                      "on-tertiary-fixed": "#351000",
+                      "outline-variant": "#c1c6d7",
+                      "on-background": "#1a1b1f",
+                      "surface-container-low": "#f4f3f8",
+                      "on-error-container": "#93000a",
+                      "secondary": "#006e28",
+                      "on-tertiary": "#ffffff",
+                      "surface-container": "#eeedf3",
+                      "on-surface-variant": "#414755",
+                      "surface-container-highest": "#e3e2e7",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#dad9df",
+                      "inverse-primary": "#adc6ff",
+                      "secondary-fixed-dim": "#53e16f",
+                      "surface": "#faf9fe",
+                      "on-error": "#ffffff",
+                      "secondary-fixed": "#72fe88",
+                      "error": "#ba1a1a",
+                      "primary-fixed-dim": "#adc6ff",
+                      "outline": "#717786",
+                      "surface-container-high": "#e9e7ed",
+                      "primary-fixed": "#d8e2ff",
+                      "tertiary-fixed-dim": "#ffb595",
+                      "tertiary-fixed": "#ffdbcc",
+                      "inverse-on-surface": "#f1f0f5",
+                      "inverse-surface": "#2f3034",
+                      "on-surface": "#1a1b1f",
+                      "on-secondary-fixed": "#002107",
+                      "on-primary": "#ffffff",
+                      "surface-bright": "#faf9fe",
+                      "tertiary-container": "#c64f00",
+                      "background": "#faf9fe",
+                      "primary": "#0058bc",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-tint": "#005bc1",
+                      "on-secondary-fixed-variant": "#00531c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "lg": "40px",
+                      "xl": "64px",
+                      "sm": "12px",
+                      "md": "24px",
+                      "base": "8px",
+                      "xs": "4px",
+                      "container-max": "1200px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Manrope"],
+                      "body-lg": ["Inter"],
+                      "headline-lg-mobile": ["Manrope"],
+                      "body-md": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "headline-lg": ["Manrope"],
+                      "display-lg": ["Manrope"],
+                      "label-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.02);
+        }
+        .progress-ring__circle {
+            transition: stroke-dashoffset 1s ease-in-out;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[#F5F5F7] text-on-surface font-body-md min-h-screen pb-24 md:pb-0">
+<!-- TopAppBar (Web & Mobile) -->
+<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl docked full-width top-0 shadow-sm sticky w-full z-50 flex justify-between items-center px-md py-sm">
+<div class="flex items-center gap-sm cursor-pointer hover:opacity-80 transition-all duration-200 active:scale-95 text-primary dark:text-primary-fixed">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_back</span>
+</div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Карьера</h1>
+<div class="text-on-surface-variant font-label-md text-label-md cursor-pointer hover:opacity-80 transition-all duration-200 active:scale-95">
+            3/5
+        </div>
+</header>
+<main class="max-w-container-max mx-auto px-md py-lg md:py-xl grid grid-cols-1 md:grid-cols-12 gap-md md:gap-lg">
+<!-- Left Column / Top Section -->
+<div class="md:col-span-5 space-y-md md:space-y-lg">
+<!-- Readiness Widget -->
+<section class="glass-card rounded-2xl p-md flex flex-col items-center justify-center relative overflow-hidden">
+<h2 class="font-headline-md text-headline-md mb-md text-center">Готовность к карьере</h2>
+<div class="relative w-48 h-48 flex items-center justify-center">
+<svg class="w-full h-full" viewbox="0 0 100 100">
+<!-- Background circle -->
+<circle class="text-surface-variant stroke-current" cx="50" cy="50" fill="transparent" r="40" stroke-width="10"></circle>
+<!-- Progress circle -->
+<circle class="text-primary stroke-current progress-ring__circle drop-shadow-md" cx="50" cy="50" fill="transparent" r="40" stroke-dasharray="251.2" stroke-dashoffset="87.92" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-display-lg text-display-lg text-primary">65%</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-center mt-md font-body-md">Хороший старт. Еще немного усилий!</p>
+</section>
+<!-- Skills Gap Card -->
+<section class="glass-card rounded-2xl p-md">
+<h3 class="font-headline-md text-headline-md mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary">code</span>
+                    Навыки
+                </h3>
+<div class="space-y-md">
+<div>
+<div class="flex justify-between mb-xs">
+<span class="font-label-md text-label-md">JavaScript</span>
+<span class="font-label-md text-label-md text-primary">80%</span>
+</div>
+<div class="h-2 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-1000" style="width: 80%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-xs">
+<span class="font-label-md text-label-md">TypeScript</span>
+<span class="font-label-md text-label-md text-tertiary">30%</span>
+</div>
+<div class="h-2 w-full bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full transition-all duration-1000" style="width: 30%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Salary Projection -->
+<section class="glass-card rounded-2xl p-md">
+<h3 class="font-headline-md text-headline-md mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary">trending_up</span>
+                    Прогноз ЗП
+                </h3>
+<div class="h-32 w-full relative flex items-end justify-between px-sm pb-sm border-b border-surface-variant">
+<!-- Minimalist mock chart -->
+<svg class="absolute inset-0 h-full w-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0,90 Q20,80 40,60 T100,20" fill="none" stroke="#007AFF" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="flex flex-col items-center">
+<span class="text-xs text-on-surface-variant">Сейчас</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-xs text-on-surface-variant">6 мес</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-xs text-on-surface-variant">1 год</span>
+</div>
+</div>
+<div class="mt-sm flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface-variant">Потенциал роста</span>
+<span class="font-headline-md text-headline-md text-secondary">+40%</span>
+</div>
+</section>
+</div>
+<!-- Right Column / Bottom Section -->
+<div class="md:col-span-7 space-y-md md:space-y-lg">
+<!-- Roles Carousel -->
+<section>
+<div class="flex justify-between items-end mb-md px-xs">
+<h2 class="font-headline-md text-headline-md">Подходящие роли</h2>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-opacity">arrow_forward</span>
+</div>
+<div class="flex overflow-x-auto gap-md pb-sm no-scrollbar px-xs snap-x">
+<!-- Role Card 1 -->
+<div class="glass-card rounded-2xl p-md min-w-[280px] flex-shrink-0 snap-start flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300 cursor-pointer">
+<div>
+<div class="flex justify-between items-start mb-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">developer_mode</span>
+</div>
+<span class="bg-secondary-container/30 text-on-secondary-container px-2 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 85%
+                                </span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-xs">React Developer</h3>
+<p class="text-on-surface-variant font-body-md line-clamp-2">Создание современных веб-интерфейсов с использованием React и экосистемы.</p>
+</div>
+<div class="mt-md flex gap-xs flex-wrap">
+<span class="h-8 px-3 flex items-center bg-[rgba(0,122,255,0.1)] text-primary rounded-full font-label-sm text-label-sm">React</span>
+<span class="h-8 px-3 flex items-center bg-[rgba(0,122,255,0.1)] text-primary rounded-full font-label-sm text-label-sm">Redux</span>
+</div>
+</div>
+<!-- Role Card 2 -->
+<div class="glass-card rounded-2xl p-md min-w-[280px] flex-shrink-0 snap-start flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300 cursor-pointer">
+<div>
+<div class="flex justify-between items-start mb-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-3xl">api</span>
+</div>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 rounded-full font-label-sm text-label-sm">
+                                    60%
+                                </span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-xs">Fullstack Eng</h3>
+<p class="text-on-surface-variant font-body-md line-clamp-2">Разработка как клиентской, так и серверной части приложений.</p>
+</div>
+<div class="mt-md flex gap-xs flex-wrap">
+<span class="h-8 px-3 flex items-center bg-[rgba(0,122,255,0.1)] text-primary rounded-full font-label-sm text-label-sm">Node.js</span>
+<span class="h-8 px-3 flex items-center bg-[rgba(0,122,255,0.1)] text-primary rounded-full font-label-sm text-label-sm">SQL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Roadmap Card -->
+<section class="glass-card rounded-2xl p-md">
+<h3 class="font-headline-md text-headline-md mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary">route</span>
+                    План развития
+                </h3>
+<div class="relative border-l-2 border-surface-variant ml-3 space-y-md pb-xs">
+<!-- Milestone 1 -->
+<div class="relative pl-md">
+<div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-secondary border-2 border-white shadow-sm"></div>
+<div class="font-label-sm text-label-sm text-secondary uppercase tracking-wide mb-xs">Текущий месяц</div>
+<div class="bg-surface rounded-xl p-sm shadow-sm border border-surface-variant/50">
+<h4 class="font-label-md text-label-md mb-1">Master React Hooks</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Глубокое понимание useEffect, useCallback, useMemo.</p>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div class="relative pl-md">
+<div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-surface-variant border-2 border-white shadow-sm"></div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide mb-xs">Месяц 2</div>
+<div class="bg-transparent rounded-xl p-sm">
+<h4 class="font-label-md text-label-md mb-1">Build 2 Projects</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Создание портфолио с реальными кейсами.</p>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="relative pl-md">
+<div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-surface-variant border-2 border-white shadow-sm"></div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide mb-xs">Месяц 3</div>
+<div class="bg-transparent rounded-xl p-sm opacity-50">
+<h4 class="font-label-md text-label-md mb-1">Подготовка к интервью</h4>
+<p class="font-body-md text-on-surface-variant text-sm">Алгоритмы, System Design, Soft Skills.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl docked full-width bottom-0 rounded-t-xl shadow-[0px_-4px_12px_rgba(0,0,0,0.05)] fixed left-0 w-full z-50 flex justify-around items-center px-md pb-base pt-xs transition-all duration-300">
+<!-- Active Tab: Стратегия -->
+<div class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed bg-primary-container/20 dark:bg-primary-container/10 rounded-full px-md py-xs transition-all duration-300 active:scale-90 cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">tactic</span>
+<span class="font-label-md text-label-md mt-1">Стратегия</span>
+</div>
+<!-- Inactive Tab: Вакансии -->
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:bg-surface-variant/50 rounded-xl px-sm py-xs transition-all duration-300 active:scale-90 cursor-pointer">
+<span class="material-symbols-outlined">work</span>
+<span class="font-label-sm text-label-sm mt-1">Вакансии</span>
+</div>
+<!-- Inactive Tab: Профиль -->
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline hover:bg-surface-variant/50 rounded-xl px-sm py-xs transition-all duration-300 active:scale-90 cursor-pointer">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-sm text-label-sm mt-1">Профиль</span>
+</div>
+</nav>
+<!-- Added top padding for desktop to account for missing top nav in prompt requirements, but keeping it clean -->
+<div class="hidden md:block h-12"></div>
+<script>
+        // Simple script to trigger the progress ring animation on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const circle = document.querySelector('.progress-ring__circle');
+            if(circle) {
+                // Force reflow
+                void circle.offsetWidth;
+                // Update offset for 65%
+                // Circumference = 2 * pi * r = 2 * 3.14 * 40 = 251.2
+                // Offset = Circumference - (Percent / 100) * Circumference
+                // 251.2 - (65 / 100) * 251.2 = 87.92
+                circle.style.strokeDashoffset = '87.92';
+            }
+        });
+    </script>
+</body></html>
+
+<!-- Профиль -->
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Профиль</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#9e3d00",
+                    "surface-variant": "#e3e2e7",
+                    "on-primary-fixed-variant": "#004493",
+                    "secondary-container": "#6ffb85",
+                    "primary-container": "#0070eb",
+                    "on-primary-fixed": "#001a41",
+                    "on-secondary-container": "#00732a",
+                    "on-tertiary-container": "#fffbff",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#fefcff",
+                    "on-tertiary-fixed-variant": "#7c2e00",
+                    "on-tertiary-fixed": "#351000",
+                    "outline-variant": "#c1c6d7",
+                    "on-background": "#1a1b1f",
+                    "surface-container-low": "#f4f3f8",
+                    "on-error-container": "#93000a",
+                    "secondary": "#006e28",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#eeedf3",
+                    "on-surface-variant": "#414755",
+                    "surface-container-highest": "#e3e2e7",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#dad9df",
+                    "inverse-primary": "#adc6ff",
+                    "secondary-fixed-dim": "#53e16f",
+                    "surface": "#faf9fe",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#72fe88",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#adc6ff",
+                    "outline": "#717786",
+                    "surface-container-high": "#e9e7ed",
+                    "primary-fixed": "#d8e2ff",
+                    "tertiary-fixed-dim": "#ffb595",
+                    "tertiary-fixed": "#ffdbcc",
+                    "inverse-on-surface": "#f1f0f5",
+                    "inverse-surface": "#2f3034",
+                    "on-surface": "#1a1b1f",
+                    "on-secondary-fixed": "#002107",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#faf9fe",
+                    "tertiary-container": "#c64f00",
+                    "background": "#faf9fe",
+                    "primary": "#0058bc",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#005bc1",
+                    "on-secondary-fixed-variant": "#00531c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "40px",
+                    "xl": "64px",
+                    "sm": "12px",
+                    "md": "24px",
+                    "base": "8px",
+                    "xs": "4px",
+                    "container-max": "1200px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Manrope"],
+                    "body-lg": ["Inter"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-lg": ["Manrope"],
+                    "display-lg": ["Manrope"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl docked full-width top-0 shadow-sm sticky top-0 w-full z-50 flex justify-between items-center px-md py-sm">
+<div class="flex items-center gap-sm">
+<button class="transition-all duration-200 active:scale-95 hover:opacity-80 flex items-center justify-center p-2 rounded-full">
+<span class="material-symbols-outlined text-on-surface-variant">arrow_back</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Карьера</h1>
+</div>
+<div>
+<span class="font-label-md text-label-md text-primary font-bold">3/5</span>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-md py-lg md:py-xl flex flex-col gap-lg">
+<!-- Profile Header Card (Glassmorphism inspired) -->
+<section class="bg-surface-container-lowest rounded-xl p-md shadow-[0px_4px_12px_rgba(0,0,0,0.05),0px_1px_2px_rgba(0,0,0,0.02)] flex flex-col items-center text-center gap-md border border-surface-variant/50 relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-32 h-32 bg-secondary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative w-24 h-24 rounded-full bg-surface-container-high border-4 border-surface shadow-sm overflow-hidden flex items-center justify-center">
+<!-- Avatar Placeholder Image -->
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="A high-quality, professional headshot portrait of a confident young professional. The person is smiling subtly, well-lit with soft, natural lighting, creating a bright and approachable mood. The background is a clean, neutral light grey, fitting perfectly within a modern minimalist UI aesthetic. The overall style is crisp, polished, and optimistic, suitable for a corporate or startup profile placeholder." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIA8voEn-UBIO8AV3in_AQcDN80lRDGroaNGYzv3ahBSvvKiMz9BHoMUNoNpuv34kjkx_9ngAtKvim_YpMQ4QvCLeyhz6EdiJEOK-DI5K42IuWjBQX5L7iafSlEiAGCcfGnGS9Zr1lZYcDRgk_ocnd9v-JOOx30Dv427gf412alPeDN_I5XaVtc3leEJfjm31n6Mm3mTcAL5ZfuL4czeBrkc8UcLBzg6k7uDrH-7aXJgKohnn7PANuWjLcdnnkfdlGpae5gBSOcfU"/>
+</div>
+<div class="z-10">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-1">Алексей Смирнов</h2>
+<p class="font-body-md text-body-md text-outline">Product Manager</p>
+<div class="mt-sm inline-flex items-center gap-xs px-sm py-xs bg-primary-container/20 rounded-full text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm">Профиль заполнен</span>
+</div>
+</div>
+</section>
+<!-- Settings List (iOS Style) -->
+<section class="flex flex-col gap-sm">
+<h3 class="font-label-md text-label-md text-outline uppercase tracking-wider pl-xs">Настройки</h3>
+<div class="bg-surface-container-lowest rounded-xl shadow-[0px_4px_12px_rgba(0,0,0,0.05)] overflow-hidden flex flex-col">
+<!-- List Item 1 -->
+<button class="flex items-center justify-between p-md w-full text-left hover:bg-surface-variant/20 transition-colors duration-200 active:bg-surface-variant/40 group">
+<div class="flex items-center gap-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Язык (RU)</span>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</button>
+<div class="h-px bg-surface-variant ml-md"></div>
+<!-- List Item 2 -->
+<button class="flex items-center justify-between p-md w-full text-left hover:bg-surface-variant/20 transition-colors duration-200 active:bg-surface-variant/40 group">
+<div class="flex items-center gap-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="strategy">strategy</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Мои стратегии</span>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</button>
+<div class="h-px bg-surface-variant ml-md"></div>
+<!-- List Item 3 -->
+<button class="flex items-center justify-between p-md w-full text-left hover:bg-surface-variant/20 transition-colors duration-200 active:bg-surface-variant/40 group">
+<div class="flex items-center gap-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="upload_file">upload_file</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Загрузить новое резюме</span>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</button>
+</div>
+</section>
+<section class="flex flex-col gap-sm mt-md">
+<h3 class="font-label-md text-label-md text-outline uppercase tracking-wider pl-xs">Аккаунт</h3>
+<div class="bg-surface-container-lowest rounded-xl shadow-[0px_4px_12px_rgba(0,0,0,0.05)] overflow-hidden flex flex-col">
+<button class="flex items-center justify-between p-md w-full text-left hover:bg-error-container/20 transition-colors duration-200 active:bg-error-container/40 group">
+<div class="flex items-center gap-sm">
+<div class="w-8 h-8 rounded-full bg-error-container/50 flex items-center justify-center text-error">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+</div>
+<span class="font-body-md text-body-md text-error font-medium">Выйти</span>
+</div>
+</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl docked full-width bottom-0 rounded-t-xl shadow-[0px_-4px_12px_rgba(0,0,0,0.05)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-md pb-base pt-xs">
+<a class="transition-all duration-300 active:scale-90 hover:bg-surface-variant/50 flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-2 rounded-lg" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="tactic">tactic</span>
+<span class="font-label-md text-label-md">Стратегия</span>
+</a>
+<a class="transition-all duration-300 active:scale-90 hover:bg-surface-variant/50 flex flex-col items-center justify-center text-on-surface-variant dark:text-outline p-2 rounded-lg" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="work">work</span>
+<span class="font-label-md text-label-md">Вакансии</span>
+</a>
+<a class="transition-all duration-300 active:scale-90 flex flex-col items-center justify-center text-primary dark:text-primary-fixed bg-primary-container/20 dark:bg-primary-container/10 rounded-full px-md py-xs" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person" data-weight="fill">person</span>
+<span class="font-label-md text-label-md">Профиль</span>
+</a>
+</nav>
+</body></html>
