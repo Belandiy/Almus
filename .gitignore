@@ -29,3 +29,6 @@ backend/models/
 
 
 .superpowers
+
+# Docker data
+.docker-data/
