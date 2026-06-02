@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppContext } from '../../hooks/useAppContext';
+import type { ChatMessage } from '../../context/AppContext';
 import MessageBubble from '../ui/MessageBubble';
 import { generateAiResponse, generateStrategy } from '../../lib/aiService';
 

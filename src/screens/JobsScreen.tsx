@@ -9,7 +9,7 @@ import { cn } from '../lib/utils';
 import type { Job } from '../data/mockJobs';
 
 const JobsScreen: React.FC = () => {
-  const { toggleLikedJob, toggleRejectedJob, likedJobs, strategyData, userProfile } = useAppContext();
+  const { toggleLikedJob, toggleRejectedJob, likedJobs, strategyData } = useAppContext();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Dynamic generation of jobs based on real vacancies.json and AI Strategy

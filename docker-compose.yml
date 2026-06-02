@@ -4,7 +4,7 @@ services:
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: minor_db
+      POSTGRES_DB: almus_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -19,7 +19,7 @@ services:
     build:
       context: ./backend
     environment:
-      DATABASE_URL: postgresql://user:password@db:5432/minor_db
+      DATABASE_URL: postgresql://user:password@db:5432/almus_db
       REDIS_URL: redis://redis:6379/0
       VACANCIES_PATH: /app/data/vacancies.json
     volumes:

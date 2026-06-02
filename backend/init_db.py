@@ -1,7 +1,7 @@
 import psycopg2
 import os
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@localhost:5432/minor_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@localhost:5432/almus_db")
 
 def init():
     try:
