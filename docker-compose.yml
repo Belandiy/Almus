@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   db:
     image: postgres:16-alpine
@@ -23,9 +21,11 @@ services:
     environment:
       DATABASE_URL: postgresql://user:password@db:5432/minor_db
       REDIS_URL: redis://redis:6379/0
+      VACANCIES_PATH: /app/data/vacancies.json
     volumes:
       - ./backend:/app
       - ./backend/models:/app/models
+      - ./data:/app/data
     ports:
       - "8000:8000"
     depends_on:

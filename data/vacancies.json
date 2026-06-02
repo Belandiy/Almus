@@ -1,0 +1,2402 @@
+[
+  {
+    "name": "Junior Frontend Developer (React)",
+    "salary": 85000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "CSS Modules",
+      "Git"
+    ],
+    "company_name": "Lamoda"
+  },
+  {
+    "name": "Стажер Frontend-разработчик",
+    "salary": 70000,
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "BEM",
+      "Git"
+    ],
+    "company_name": "MegaFon"
+  },
+  {
+    "name": "Junior Vue.js Developer",
+    "salary": 90000,
+    "skills": [
+      "Vue 3",
+      "Pinia",
+      "TypeScript",
+      "SCSS",
+      "Vite"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Младший Frontend разработчик",
+    "salary": 95000,
+    "skills": [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Jest",
+      "Git"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Junior Frontend Engineer",
+    "salary": 105000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Storybook",
+      "Webpack",
+      "Docker"
+    ],
+    "company_name": "Avito"
+  },
+  {
+    "name": "Frontend Developer (Junior)",
+    "salary": 80000,
+    "skills": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "SASS",
+      "Gulp"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Junior React Developer",
+    "salary": 110000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "React Query",
+      "Styled Components",
+      "Git"
+    ],
+    "company_name": "JetBrains"
+  },
+  {
+    "name": "Стажер-разработчик интерфейсов",
+    "salary": 75000,
+    "skills": [
+      "JavaScript",
+      "DOM",
+      "Fetch API",
+      "Canvas",
+      "Git"
+    ],
+    "company_name": "Kaspersky"
+  },
+  {
+    "name": "Junior Frontend (Angular)",
+    "salary": 90000,
+    "skills": [
+      "Angular",
+      "RxJS",
+      "TypeScript",
+      "Karma",
+      "SASS"
+    ],
+    "company_name": "Positive Technologies"
+  },
+  {
+    "name": "Младший веб-разработчик",
+    "salary": 85000,
+    "skills": [
+      "React",
+      "Redux Toolkit",
+      "Ant Design",
+      "Git",
+      "REST API"
+    ],
+    "company_name": "MegaFon"
+  },
+  {
+    "name": "Junior Frontend Developer (React/TS)",
+    "salary": 100000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Zustand",
+      "Vite",
+      "ESLint"
+    ],
+    "company_name": "JetBrains"
+  },
+  {
+    "name": "React Developer Junior",
+    "salary": 92000,
+    "skills": [
+      "React",
+      "Hooks",
+      "Context API",
+      "Module CSS",
+      "Git"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Junior Frontend Разработчик",
+    "salary": 88000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Axios",
+      "BEM",
+      "Git"
+    ],
+    "company_name": "Selectel"
+  },
+  {
+    "name": "Стажер-программист (Frontend)",
+    "salary": 72000,
+    "skills": [
+      "JavaScript",
+      "CSS3",
+      "Flexbox",
+      "Git",
+      "NPM"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Junior Frontend Engineer (Vue)",
+    "salary": 98000,
+    "skills": [
+      "Vue",
+      "Vuex",
+      "TypeScript",
+      "Tailwind",
+      "Jest"
+    ],
+    "company_name": "Skyeng"
+  },
+  {
+    "name": "Junior Frontend Developer (Remote)",
+    "salary": 105000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Redux Saga",
+      "PostCSS",
+      "Git"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Младший фронтенд-разработчик",
+    "salary": 78000,
+    "skills": [
+      "HTML",
+      "SCSS",
+      "JavaScript",
+      "jQuery",
+      "Git"
+    ],
+    "company_name": "Selectel"
+  },
+  {
+    "name": "Junior React.js Developer",
+    "salary": 110000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Effector",
+      "RTK Query",
+      "Docker"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Junior Frontend (Vanilla JS)",
+    "salary": 70000,
+    "skills": [
+      "JavaScript",
+      "ES6+",
+      "Web Components",
+      "CSS Grid",
+      "Git"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Junior Frontend Developer",
+    "salary": 85000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Material UI",
+      "Swagger",
+      "Git"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Junior Frontend (Next.js)",
+    "salary": 108000,
+    "skills": [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "Tailwind",
+      "Git"
+    ],
+    "company_name": "Lamoda"
+  },
+  {
+    "name": "Junior Vue Developer",
+    "salary": 82000,
+    "skills": [
+      "Vue 2",
+      "Vuex",
+      "JavaScript",
+      "Element UI",
+      "Git"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Стажер в команду Frontend",
+    "salary": 70000,
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Git",
+      "Chrome DevTools"
+    ],
+    "company_name": "Gazprombank"
+  },
+  {
+    "name": "Junior Web Developer",
+    "salary": 90000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "SASS",
+      "Web-vitals",
+      "Git"
+    ],
+    "company_name": "Kaspersky"
+  },
+  {
+    "name": "Junior React/Redux Developer",
+    "salary": 95000,
+    "skills": [
+      "React",
+      "Redux",
+      "TypeScript",
+      "Styled-components",
+      "Git"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Младший разработчик Vue.js",
+    "salary": 87000,
+    "skills": [
+      "Vue",
+      "Composition API",
+      "TypeScript",
+      "Vite",
+      "Git"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Junior Frontend (React/MobX)",
+    "salary": 102000,
+    "skills": [
+      "React",
+      "MobX",
+      "TypeScript",
+      "SCSS",
+      "Git"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Junior Frontend-разработчик (React)",
+    "salary": 93000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Redux Toolkit",
+      "Axios",
+      "Git"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Стажер Frontend (React)",
+    "salary": 75000,
+    "skills": [
+      "JavaScript",
+      "React",
+      "CSS Modules",
+      "Git",
+      "Figma"
+    ],
+    "company_name": "VK"
+  },
+  {
+    "name": "Junior Frontend Engineer (React)",
+    "salary": 110000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "GraphQL",
+      "Apollo",
+      "Docker"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Junior Frontend (Angular/TS)",
+    "salary": 95000,
+    "skills": [
+      "Angular",
+      "TypeScript",
+      "RxJS",
+      "SCSS",
+      "Git"
+    ],
+    "company_name": "Kaspersky"
+  },
+  {
+    "name": "Младший React-разработчик",
+    "salary": 89000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Formik",
+      "Yup",
+      "Git"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Junior Frontend Developer (Vue 3)",
+    "salary": 96000,
+    "skills": [
+      "Vue 3",
+      "TypeScript",
+      "Pinia",
+      "Tailwind",
+      "Git"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Junior Frontend (Svelte)",
+    "salary": 90000,
+    "skills": [
+      "Svelte",
+      "SvelteKit",
+      "TypeScript",
+      "SCSS",
+      "Git"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Junior Frontend Developer (React)",
+    "salary": 100000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "Jest",
+      "Git"
+    ],
+    "company_name": "VK"
+  },
+  {
+    "name": "Стажер фронтенд",
+    "salary": 70000,
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "BEM",
+      "Git"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Junior Frontend Engineer",
+    "salary": 105000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Storybook",
+      "Git"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Младший Frontend-разработчик (Vue)",
+    "salary": 85000,
+    "skills": [
+      "Vue",
+      "Vuex",
+      "JavaScript",
+      "SCSS",
+      "Git"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Junior React Developer",
+    "salary": 98000,
+    "skills": [
+      "React",
+      "Hooks",
+      "TypeScript",
+      "Tailwind",
+      "Git"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Junior Frontend (React)",
+    "salary": 94000,
+    "skills": [
+      "React",
+      "Redux Toolkit",
+      "TypeScript",
+      "Axios",
+      "Git"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Junior Python Developer",
+    "salary": 110000,
+    "skills": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "REST API",
+      "Docker"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Junior Go Developer",
+    "salary": 120000,
+    "skills": [
+      "Go",
+      "PostgreSQL",
+      "Redis",
+      "gRPC",
+      "Docker"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Младший Java-разработчик",
+    "salary": 100000,
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "Hibernate",
+      "Maven",
+      "JUnit"
+    ],
+    "company_name": "MegaFon"
+  },
+  {
+    "name": "Junior Node.js Developer",
+    "salary": 115000,
+    "skills": [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "MongoDB",
+      "Git"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Python Разработчик (Junior)",
+    "salary": 95000,
+    "skills": [
+      "Python",
+      "Flask",
+      "SQLAlchemy",
+      "Alembic",
+      "Git"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Junior Backend Developer (PHP/Laravel)",
+    "salary": 85000,
+    "skills": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "Redis",
+      "Git"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Стажер Python-разработчик",
+    "salary": 80000,
+    "skills": [
+      "Python",
+      "SQL",
+      "Git",
+      "FastAPI",
+      "Asyncio"
+    ],
+    "company_name": "Skyeng"
+  },
+  {
+    "name": "Junior Java Engineer",
+    "salary": 125000,
+    "skills": [
+      "Java",
+      "Spring Framework",
+      "PostgreSQL",
+      "Kafka",
+      "Docker"
+    ],
+    "company_name": "Positive Technologies"
+  },
+  {
+    "name": "Младший Backend разработчик (Go)",
+    "salary": 110000,
+    "skills": [
+      "Go",
+      "SQL",
+      "RabbitMQ",
+      "Git",
+      "Linux"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Junior .NET Developer",
+    "salary": 105000,
+    "skills": [
+      "C#",
+      ".NET Core",
+      "Entity Framework",
+      "SQL Server",
+      "Git"
+    ],
+    "company_name": "Skyeng"
+  },
+  {
+    "name": "Junior Backend Developer (Python/FastAPI)",
+    "salary": 115000,
+    "skills": [
+      "Python",
+      "FastAPI",
+      "Pydantic",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "company_name": "Positive Technologies"
+  },
+  {
+    "name": "Junior Node.js Engineer",
+    "salary": 130000,
+    "skills": [
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Младший Python разработчик",
+    "salary": 90000,
+    "skills": [
+      "Python",
+      "Django",
+      "DRF",
+      "Git",
+      "Celery"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Junior Java Developer",
+    "salary": 110000,
+    "skills": [
+      "Java",
+      "Spring Cloud",
+      "MySQL",
+      "Git",
+      "Gradle"
+    ],
+    "company_name": "Tinkoff"
+  },
+  {
+    "name": "Junior Go Engineer",
+    "salary": 125000,
+    "skills": [
+      "Go",
+      "PostgreSQL",
+      "Microservices",
+      "Docker",
+      "Prometheus"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Стажер в Backend (Node.js)",
+    "salary": 80000,
+    "skills": [
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "Git",
+      "SQL"
+    ],
+    "company_name": "VK"
+  },
+  {
+    "name": "Junior Backend Developer (C++)",
+    "salary": 120000,
+    "skills": [
+      "C++",
+      "STL",
+      "Boost",
+      "Linux",
+      "Multithreading"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Junior Python Developer (Data)",
+    "salary": 100000,
+    "skills": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "SQL",
+      "Git"
+    ],
+    "company_name": "Selectel"
+  },
+  {
+    "name": "Младший Java-программист",
+    "salary": 95000,
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "JDBC",
+      "Git",
+      "Unit tests"
+    ],
+    "company_name": "Yandex"
+  },
+  {
+    "name": "Junior Backend Engineer (Go)",
+    "salary": 130000,
+    "skills": [
+      "Go",
+      "SQL",
+      "Redis",
+      "Docker",
+      "gRPC"
+    ],
+    "company_name": "JetBrains"
+  },
+  {
+    "name": "Junior Ruby on Rails Developer",
+    "salary": 105000,
+    "skills": [
+      "Ruby",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "RSpec",
+      "Git"
+    ],
+    "company_name": "MegaFon"
+  },
+  {
+    "name": "Junior Python Backend Developer",
+    "salary": 110000,
+    "skills": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Tortoise ORM",
+      "Docker"
+    ],
+    "company_name": "Selectel"
+  },
+  {
+    "name": "Младший PHP разработчик (Symfony)",
+    "salary": 88000,
+    "skills": [
+      "PHP",
+      "Symfony",
+      "Doctrine",
+      "PostgreSQL",
+      "Git"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Junior Node.js Developer (Web3)",
+    "salary": 130000,
+    "skills": [
+      "Node.js",
+      "TypeScript",
+      "Ethers.js",
+      "Solidity",
+      "Git"
+    ],
+    "company_name": "Skyeng"
+  },
+  {
+    "name": "Junior Python Developer (Django)",
+    "salary": 105000,
+    "skills": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "Redis",
+      "Git"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Стажер Java",
+    "salary": 80000,
+    "skills": [
+      "Java",
+      "OOP",
+      "SQL",
+      "Collections",
+      "Git"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Junior Go Developer (Highload)",
+    "salary": 130000,
+    "skills": [
+      "Go",
+      "ClickHouse",
+      "Redis",
+      "Docker",
+      "Linux"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Младший Backend (C#)",
+    "salary": 100000,
+    "skills": [
+      "C#",
+      "ASP.NET Core",
+      "Entity Framework",
+      "Git",
+      "REST API"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Junior Python Developer (Async)",
+    "salary": 118000,
+    "skills": [
+      "Python",
+      "Aiohttp",
+      "PostgreSQL",
+      "Docker",
+      "Git"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Junior Backend Developer (NestJS)",
+    "salary": 125000,
+    "skills": [
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma"
+    ],
+    "company_name": "Avito"
+  },
+  {
+    "name": "Junior Java Developer (Fintech)",
+    "salary": 120000,
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "Oracle",
+      "Docker",
+      "Kafka"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Junior Python Developer (Automations)",
+    "salary": 95000,
+    "skills": [
+      "Python",
+      "Selenium",
+      "Requests",
+      "SQL",
+      "Git"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Младший PHP/Laravel разработчик",
+    "salary": 90000,
+    "skills": [
+      "PHP",
+      "Laravel",
+      "Blade",
+      "MySQL",
+      "Git"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Junior Node.js Backend Developer",
+    "salary": 110000,
+    "skills": [
+      "Node.js",
+      "Koa",
+      "TypeScript",
+      "PostgreSQL",
+      "Git"
+    ],
+    "company_name": "Gazprombank"
+  },
+  {
+    "name": "Junior Python Engineer",
+    "salary": 120000,
+    "skills": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "Kubernetes",
+      "Redis"
+    ],
+    "company_name": "MegaFon"
+  },
+  {
+    "name": "Стажер Go-разработчик",
+    "salary": 85000,
+    "skills": [
+      "Go",
+      "Algorithms",
+      "SQL",
+      "Git",
+      "Linux"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Junior Java Developer (Enterprise)",
+    "salary": 115000,
+    "skills": [
+      "Java",
+      "EE",
+      "Spring",
+      "PostgreSQL",
+      "Maven"
+    ],
+    "company_name": "Avito"
+  },
+  {
+    "name": "Junior Backend Developer (Python)",
+    "salary": 108000,
+    "skills": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Git"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Junior Go Разработчик",
+    "salary": 122000,
+    "skills": [
+      "Go",
+      "PostgreSQL",
+      "Docker",
+      "Git",
+      "Microservices"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Младший Node.js разработчик",
+    "salary": 105000,
+    "skills": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Git"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Junior QA Manual Engineer",
+    "salary": 65000,
+    "skills": [
+      "Test Case Design",
+      "Bug Tracking",
+      "DevTools",
+      "Postman",
+      "SQL"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Младший специалист по тестированию",
+    "salary": 60000,
+    "skills": [
+      "Checklists",
+      "Jira",
+      "Figma",
+      "Web Testing",
+      "Git"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Junior QA Automation (Python)",
+    "salary": 110000,
+    "skills": [
+      "Python",
+      "Pytest",
+      "Selenium",
+      "Allure",
+      "Jenkins"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "QA Automation Engineer Junior (Java)",
+    "salary": 115000,
+    "skills": [
+      "Java",
+      "Selenium",
+      "TestNG",
+      "Maven",
+      "Git"
+    ],
+    "company_name": "Tinkoff"
+  },
+  {
+    "name": "Junior QA Manual (Mobile)",
+    "salary": 75000,
+    "skills": [
+      "Charles Proxy",
+      "ADB",
+      "XCode",
+      "TestRail",
+      "Mobile Testing"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Младший QA автотестировщик",
+    "salary": 100000,
+    "skills": [
+      "JavaScript",
+      "Playwright",
+      "Git",
+      "Postman",
+      "CI/CD"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Junior QA Engineer (Web)",
+    "salary": 80000,
+    "skills": [
+      "SQL",
+      "Postman",
+      "DevTools",
+      "API Testing",
+      "Charles"
+    ],
+    "company_name": "Skyeng"
+  },
+  {
+    "name": "Стажер QA Manual",
+    "salary": 60000,
+    "skills": [
+      "Theory of testing",
+      "Bug reports",
+      "Excel",
+      "Git",
+      "Browser DevTools"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Junior QA Automation (JS/Cypress)",
+    "salary": 110000,
+    "skills": [
+      "JavaScript",
+      "Cypress",
+      "Git",
+      "Docker",
+      "Jenkins"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Младший инженер по качеству",
+    "salary": 70000,
+    "skills": [
+      "Functional Testing",
+      "Jira",
+      "Confluence",
+      "SQL",
+      "Postman"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Junior QA Automation (Python/Appium)",
+    "salary": 120000,
+    "skills": [
+      "Python",
+      "Appium",
+      "Selenium",
+      "Docker",
+      "Git"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Junior QA Manual Engineer (Fintech)",
+    "salary": 85000,
+    "skills": [
+      "SQL",
+      "SoapUI",
+      "Postman",
+      "Testing Theory",
+      "Jira"
+    ],
+    "company_name": "JetBrains"
+  },
+  {
+    "name": "Стажер QA Automation (Java)",
+    "salary": 90000,
+    "skills": [
+      "Java",
+      "OOP",
+      "Selenium",
+      "Git",
+      "SQL"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Junior QA Manual (GameDev)",
+    "salary": 65000,
+    "skills": [
+      "Game testing",
+      "Unity",
+      "Bug tracking",
+      "Git",
+      "Jira"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Младший QA Automation (Go)",
+    "salary": 120000,
+    "skills": [
+      "Go",
+      "Unit tests",
+      "Integration tests",
+      "Docker",
+      "Linux"
+    ],
+    "company_name": "Yandex"
+  },
+  {
+    "name": "Junior QA Engineer (Security)",
+    "salary": 95000,
+    "skills": [
+      "Burp Suite",
+      "OWASP",
+      "SQL Injection",
+      "Penetration testing",
+      "Nmap"
+    ],
+    "company_name": "Kaspersky"
+  },
+  {
+    "name": "Junior QA Manual (Desktop)",
+    "salary": 72000,
+    "skills": [
+      "Windows Testing",
+      "macOS Testing",
+      "VMware",
+      "SQL",
+      "Git"
+    ],
+    "company_name": "MegaFon"
+  },
+  {
+    "name": "Junior QA Automation (C#)",
+    "salary": 105000,
+    "skills": [
+      "C#",
+      "Selenium",
+      "SpecFlow",
+      "Git",
+      "NUnit"
+    ],
+    "company_name": "Kaspersky"
+  },
+  {
+    "name": "Младший специалист QA",
+    "salary": 68000,
+    "skills": [
+      "Regression Testing",
+      "Smoke Testing",
+      "Jira",
+      "Postman",
+      "SQL"
+    ],
+    "company_name": "MegaFon"
+  },
+  {
+    "name": "Junior QA Manual Engineer (Remote)",
+    "salary": 80000,
+    "skills": [
+      "API Testing",
+      "SQL",
+      "Postman",
+      "DevTools",
+      "Figma"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Junior QA Automation (JavaScript)",
+    "salary": 112000,
+    "skills": [
+      "JavaScript",
+      "Jest",
+      "Puppeteer",
+      "Git",
+      "Docker"
+    ],
+    "company_name": "Avito"
+  },
+  {
+    "name": "Junior QA Manual (HealthTech)",
+    "salary": 75000,
+    "skills": [
+      "Compliance testing",
+      "SQL",
+      "Postman",
+      "Jira",
+      "TestRail"
+    ],
+    "company_name": "Gazprombank"
+  },
+  {
+    "name": "Стажер QA Engineer",
+    "salary": 60000,
+    "skills": [
+      "Testing basics",
+      "HTTP",
+      "JSON",
+      "Git",
+      "English (B1)"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Junior QA Automation Engineer (Python)",
+    "salary": 118000,
+    "skills": [
+      "Python",
+      "Robot Framework",
+      "Selenium",
+      "Git",
+      "Allure"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Младший QA (Mobile Auto)",
+    "salary": 115000,
+    "skills": [
+      "Java",
+      "Appium",
+      "Android Studio",
+      "Git",
+      "Jenkins"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Junior QA Manual (E-commerce)",
+    "salary": 82000,
+    "skills": [
+      "Cross-browser testing",
+      "Postman",
+      "SQL",
+      "Charles",
+      "Git"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Junior QA Automation (Python/Pytest)",
+    "salary": 105000,
+    "skills": [
+      "Python",
+      "Pytest",
+      "Requests",
+      "Git",
+      "Docker"
+    ],
+    "company_name": "VK"
+  },
+  {
+    "name": "Junior QA Engineer (Automation Java)",
+    "salary": 110000,
+    "skills": [
+      "Java",
+      "Selenium Webdriver",
+      "Maven",
+      "Allure",
+      "Git"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Младший специалист по автотестам",
+    "salary": 98000,
+    "skills": [
+      "Python",
+      "Selenium",
+      "SQL",
+      "Git",
+      "Postman"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Junior QA Manual (Fintech Apps)",
+    "salary": 88000,
+    "skills": [
+      "Mobile Testing",
+      "SQL",
+      "Postman",
+      "Charles Proxy",
+      "Git"
+    ],
+    "company_name": "VK"
+  },
+  {
+    "name": "Junior Data Analyst",
+    "salary": 95000,
+    "skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "Tableau",
+      "Statistics"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Младший аналитик данных",
+    "salary": 85000,
+    "skills": [
+      "SQL",
+      "Excel",
+      "Python",
+      "Power BI",
+      "Data Visualization"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Junior System Analyst",
+    "salary": 90000,
+    "skills": [
+      "SQL",
+      "REST/SOAP",
+      "UML",
+      "BPMN",
+      "Requirement Analysis"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Младший системный аналитик",
+    "salary": 80000,
+    "skills": [
+      "JSON/XML",
+      "SQL",
+      "Jira",
+      "Confluence",
+      "Postman"
+    ],
+    "company_name": "Gazprombank"
+  },
+  {
+    "name": "Junior Data Analyst (Marketing)",
+    "salary": 100000,
+    "skills": [
+      "Python",
+      "SQL",
+      "Google Analytics",
+      "Amplitude",
+      "A/B Testing"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Junior System Analyst (Fintech)",
+    "salary": 110000,
+    "skills": [
+      "SQL",
+      "Kafka",
+      "Microservices Architecture",
+      "API Design",
+      "BPMN"
+    ],
+    "company_name": "MegaFon"
+  },
+  {
+    "name": "Стажер-аналитик",
+    "salary": 80000,
+    "skills": [
+      "Excel",
+      "SQL",
+      "Python",
+      "Statistics",
+      "Problem Solving"
+    ],
+    "company_name": "Lamoda"
+  },
+  {
+    "name": "Junior Data Analyst (BI)",
+    "salary": 105000,
+    "skills": [
+      "SQL",
+      "Power BI",
+      "DAX",
+      "Python",
+      "Data Modeling"
+    ],
+    "company_name": "Yandex"
+  },
+  {
+    "name": "Младший бизнес-аналитик",
+    "salary": 85000,
+    "skills": [
+      "BPMN",
+      "UML",
+      "SQL",
+      "Documentation",
+      "User Stories"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Junior System Analyst (E-commerce)",
+    "salary": 95000,
+    "skills": [
+      "SQL",
+      "Swagger",
+      "REST API",
+      "JSON",
+      "Jira"
+    ],
+    "company_name": "Selectel"
+  },
+  {
+    "name": "Junior Data Scientist (Analyst)",
+    "salary": 115000,
+    "skills": [
+      "Python",
+      "Scikit-learn",
+      "SQL",
+      "Statistics",
+      "Matplotlib"
+    ],
+    "company_name": "VK"
+  },
+  {
+    "name": "Младший аналитик (Product)",
+    "salary": 100000,
+    "skills": [
+      "Python",
+      "SQL",
+      "Amplitude",
+      "Retention Analysis",
+      "Statistics"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Junior System Analyst (ERP)",
+    "salary": 90000,
+    "skills": [
+      "SQL",
+      "ERP systems",
+      "Requirement gathering",
+      "UML",
+      "Git"
+    ],
+    "company_name": "Kaspersky"
+  },
+  {
+    "name": "Junior Data Analyst (Remote)",
+    "salary": 110000,
+    "skills": [
+      "Python",
+      "SQL",
+      "Tableau",
+      "ClickHouse",
+      "Data Cleansing"
+    ],
+    "company_name": "VK"
+  },
+  {
+    "name": "Младший системный аналитик (Junior)",
+    "salary": 88000,
+    "skills": [
+      "SQL",
+      "API Documentation",
+      "BPMN",
+      "Postman",
+      "JSON"
+    ],
+    "company_name": "Skyeng"
+  },
+  {
+    "name": "Junior Analyst (Big Data)",
+    "salary": 115000,
+    "skills": [
+      "Python",
+      "PySpark",
+      "SQL",
+      "Hadoop",
+      "Airflow"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Стажер системный аналитик",
+    "salary": 80000,
+    "skills": [
+      "Technical Writing",
+      "SQL",
+      "Logic",
+      "ER-diagrams",
+      "Jira"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Junior Product Analyst",
+    "salary": 105000,
+    "skills": [
+      "SQL",
+      "Python",
+      "A/B Testing",
+      "Amplitude",
+      "Statistics"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Младший аналитик SQL",
+    "salary": 82000,
+    "skills": [
+      "Advanced SQL",
+      "Excel VBA",
+      "Python",
+      "DWH",
+      "Git"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Junior System Analyst (Mobile)",
+    "salary": 100000,
+    "skills": [
+      "API Design",
+      "SQL",
+      "UML",
+      "Charles Proxy",
+      "Postman"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Junior Data Analyst (Finance)",
+    "salary": 112000,
+    "skills": [
+      "Python",
+      "SQL",
+      "Financial Modeling",
+      "Power BI",
+      "Excel"
+    ],
+    "company_name": "Gazprombank"
+  },
+  {
+    "name": "Младший аналитик Tableau",
+    "salary": 95000,
+    "skills": [
+      "Tableau",
+      "SQL",
+      "Data Prep",
+      "Python",
+      "Git"
+    ],
+    "company_name": "Positive Technologies"
+  },
+  {
+    "name": "Junior Data Analyst (GameDev)",
+    "salary": 108000,
+    "skills": [
+      "Python",
+      "SQL",
+      "Custom Analytics",
+      "Stats",
+      "Visualization"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Junior System Analyst (Logistics)",
+    "salary": 92000,
+    "skills": [
+      "SQL",
+      "BPMN",
+      "REST API",
+      "XML",
+      "JSON"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Стажер-аналитик данных",
+    "salary": 80000,
+    "skills": [
+      "Python",
+      "SQL",
+      "Numpy",
+      "Pandas",
+      "Visuals"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Junior System Analyst (Web)",
+    "salary": 98000,
+    "skills": [
+      "SQL",
+      "HTTP",
+      "Swagger",
+      "Postman",
+      "User Cases"
+    ],
+    "company_name": "Lamoda"
+  },
+  {
+    "name": "Junior Data Analyst (Python/SQL)",
+    "salary": 105000,
+    "skills": [
+      "Python",
+      "SQL",
+      "ETL",
+      "Airflow",
+      "Pandas"
+    ],
+    "company_name": "Gazprombank"
+  },
+  {
+    "name": "Младший аналитик BI",
+    "salary": 90000,
+    "skills": [
+      "Power BI",
+      "SQL",
+      "Data modeling",
+      "DAX",
+      "Excel"
+    ],
+    "company_name": "Gazprombank"
+  },
+  {
+    "name": "Junior Business/System Analyst",
+    "salary": 94000,
+    "skills": [
+      "SQL",
+      "BPMN",
+      "Technical Writing",
+      "Requirement analysis",
+      "Git"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Junior System Engineer (Analyst)",
+    "salary": 100000,
+    "skills": [
+      "SQL",
+      "UML",
+      "REST",
+      "JSON",
+      "Confluence"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Junior iOS Developer",
+    "salary": 110000,
+    "skills": [
+      "Swift",
+      "UIKit",
+      "CocoaPods",
+      "Git",
+      "REST API"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Junior Android Developer",
+    "salary": 110000,
+    "skills": [
+      "Kotlin",
+      "Android SDK",
+      "Retrofit",
+      "Git",
+      "Clean Architecture"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Младший Flutter-разработчик",
+    "salary": 100000,
+    "skills": [
+      "Dart",
+      "Flutter",
+      "BLoC",
+      "Git",
+      "Firebase"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Junior iOS Engineer (SwiftUI)",
+    "salary": 120000,
+    "skills": [
+      "Swift",
+      "SwiftUI",
+      "Combine",
+      "MVVM",
+      "Git"
+    ],
+    "company_name": "Gazprombank"
+  },
+  {
+    "name": "Младший Android разработчик",
+    "salary": 95000,
+    "skills": [
+      "Kotlin",
+      "Coroutines",
+      "Dagger2",
+      "Room",
+      "Git"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Junior React Native Developer",
+    "salary": 115000,
+    "skills": [
+      "JavaScript",
+      "React Native",
+      "TypeScript",
+      "Redux",
+      "Git"
+    ],
+    "company_name": "Avito"
+  },
+  {
+    "name": "Junior iOS Developer (Objective-C/Swift)",
+    "salary": 105000,
+    "skills": [
+      "Swift",
+      "Objective-C",
+      "Autolayout",
+      "Git",
+      "CoreData"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Стажер Android разработчик",
+    "salary": 90000,
+    "skills": [
+      "Kotlin",
+      "Java",
+      "XML",
+      "Git",
+      "Android Studio"
+    ],
+    "company_name": "VTB"
+  },
+  {
+    "name": "Junior Flutter Developer",
+    "salary": 125000,
+    "skills": [
+      "Dart",
+      "Flutter",
+      "Riverpod",
+      "Dio",
+      "Git"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Junior iOS Engineer",
+    "salary": 130000,
+    "skills": [
+      "Swift",
+      "Unit Testing",
+      "Modular Architecture",
+      "CI/CD",
+      "Git"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Младший Mobile Разработчик (Android)",
+    "salary": 108000,
+    "skills": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Hilt",
+      "Retrofit",
+      "Git"
+    ],
+    "company_name": "JetBrains"
+  },
+  {
+    "name": "Junior iOS Developer (Remote)",
+    "salary": 120000,
+    "skills": [
+      "Swift",
+      "UIKit",
+      "GCD",
+      "URLSession",
+      "Git"
+    ],
+    "company_name": "Skyeng"
+  },
+  {
+    "name": "Junior Android Engineer",
+    "salary": 115000,
+    "skills": [
+      "Kotlin",
+      "MVI",
+      "Flow",
+      "Koin",
+      "Docker"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Junior React Native Engineer",
+    "salary": 122000,
+    "skills": [
+      "TypeScript",
+      "React Native",
+      "Reanimated",
+      "Git",
+      "Native Modules"
+    ],
+    "company_name": "VK"
+  },
+  {
+    "name": "Стажер iOS разработчик",
+    "salary": 90000,
+    "skills": [
+      "Swift",
+      "OOP",
+      "Data structures",
+      "Xcode",
+      "Git"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Junior Android Developer (Java/Kotlin)",
+    "salary": 100000,
+    "skills": [
+      "Kotlin",
+      "Java",
+      "Android SDK",
+      "MVVM",
+      "Git"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Junior Mobile Developer (Flutter)",
+    "salary": 110000,
+    "skills": [
+      "Dart",
+      "Flutter",
+      "Provider",
+      "REST",
+      "Git"
+    ],
+    "company_name": "Selectel"
+  },
+  {
+    "name": "Junior iOS Developer (New Graduate)",
+    "salary": 115000,
+    "skills": [
+      "Swift",
+      "UIKit",
+      "SnapKit",
+      "Moya",
+      "Git"
+    ],
+    "company_name": "Tinkoff"
+  },
+  {
+    "name": "Младший разработчик Android",
+    "salary": 102000,
+    "skills": [
+      "Kotlin",
+      "Coroutines",
+      "Retrofit",
+      "JUnit",
+      "Git"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Junior Mobile Engineer (iOS)",
+    "salary": 125000,
+    "skills": [
+      "Swift",
+      "SwiftUI",
+      "Combine",
+      "Git",
+      "Networking"
+    ],
+    "company_name": "Avito"
+  },
+  {
+    "name": "Junior UI/UX Designer",
+    "salary": 75000,
+    "skills": [
+      "Figma",
+      "Adobe Photoshop",
+      "Prototyping",
+      "User Research",
+      "UI Kits"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Младший дизайнер интерфейсов",
+    "salary": 65000,
+    "skills": [
+      "Figma",
+      "Typography",
+      "Color Theory",
+      "Layout",
+      "Grid systems"
+    ],
+    "company_name": "Gazprombank"
+  },
+  {
+    "name": "Junior Web Designer",
+    "salary": 70000,
+    "skills": [
+      "Figma",
+      "Adobe Illustrator",
+      "Responsive Design",
+      "Landing Pages",
+      "BEM"
+    ],
+    "company_name": "Ozon"
+  },
+  {
+    "name": "Junior Product Designer",
+    "salary": 85000,
+    "skills": [
+      "Figma",
+      "User Flows",
+      "Wireframing",
+      "User Testing",
+      "Analytics"
+    ],
+    "company_name": "Selectel"
+  },
+  {
+    "name": "Младший UI-дизайнер",
+    "salary": 60000,
+    "skills": [
+      "Figma",
+      "Icon Design",
+      "Composition",
+      "Design Systems",
+      "Framer"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Junior UI/UX Designer (Mobile)",
+    "salary": 80000,
+    "skills": [
+      "Figma",
+      "Mobile Guidelines",
+      "iOS/Android patterns",
+      "Prototyping",
+      "Zeplin"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Стажер Дизайнер",
+    "salary": 60000,
+    "skills": [
+      "Figma",
+      "Basics of UI",
+      "Creativity",
+      "Portfolio",
+      "English (B1)"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Junior UX Researcher",
+    "salary": 78000,
+    "skills": [
+      "Interviews",
+      "Usability Testing",
+      "Personas",
+      "CJM",
+      "Figma"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Junior Graphic/UI Designer",
+    "salary": 72000,
+    "skills": [
+      "Photoshop",
+      "Illustrator",
+      "Figma",
+      "Branding",
+      "UI components"
+    ],
+    "company_name": "Kaspersky"
+  },
+  {
+    "name": "Junior Designer (Design System)",
+    "salary": 88000,
+    "skills": [
+      "Figma",
+      "Tokens",
+      "Documentation",
+      "UI Components",
+      "Auto Layout"
+    ],
+    "company_name": "Tinkoff"
+  },
+  {
+    "name": "Младший продуктовый дизайнер",
+    "salary": 90000,
+    "skills": [
+      "Figma",
+      "UX Strategy",
+      "Prototyping",
+      "A/B Testing",
+      "Design Thinking"
+    ],
+    "company_name": "Gazprombank"
+  },
+  {
+    "name": "Junior Web/Mobile Designer",
+    "salary": 82000,
+    "skills": [
+      "Figma",
+      "Sketch",
+      "Prototyping",
+      "UI Patterns",
+      "Grid"
+    ],
+    "company_name": "Selectel"
+  },
+  {
+    "name": "Junior UI/UX (Fintech)",
+    "salary": 85000,
+    "skills": [
+      "Figma",
+      "Complex Interfaces",
+      "Data Visualization",
+      "User Research",
+      "Git"
+    ],
+    "company_name": "Tinkoff"
+  },
+  {
+    "name": "Junior UI Designer",
+    "salary": 70000,
+    "skills": [
+      "Figma",
+      "Visual Design",
+      "Styleguides",
+      "Iconography",
+      "Motion Design"
+    ],
+    "company_name": "Positive Technologies"
+  },
+  {
+    "name": "Младший UX-дизайнер",
+    "salary": 75000,
+    "skills": [
+      "Figma",
+      "Wireframes",
+      "User Journeys",
+      "Card Sorting",
+      "Heuristics"
+    ],
+    "company_name": "Lamoda"
+  },
+  {
+    "name": "Junior DevOps Engineer",
+    "salary": 120000,
+    "skills": [
+      "Linux",
+      "Docker",
+      "CI/CD",
+      "Bash",
+      "Nginx"
+    ],
+    "company_name": "VK"
+  },
+  {
+    "name": "Младший DevOps-инженер",
+    "salary": 110000,
+    "skills": [
+      "Kubernetes",
+      "Docker",
+      "Ansible",
+      "GitLab CI",
+      "Prometheus"
+    ],
+    "company_name": "Kaspersky"
+  },
+  {
+    "name": "Junior SRE",
+    "salary": 130000,
+    "skills": [
+      "Linux",
+      "Python",
+      "Monitoring",
+      "Docker",
+      "Terraform"
+    ],
+    "company_name": "Yandex"
+  },
+  {
+    "name": "Junior System Administrator (DevOps)",
+    "salary": 100000,
+    "skills": [
+      "Linux",
+      "Networking",
+      "Bash",
+      "Docker",
+      "Git"
+    ],
+    "company_name": "Kaspersky"
+  },
+  {
+    "name": "Junior DevOps (Cloud)",
+    "salary": 140000,
+    "skills": [
+      "AWS",
+      "Terraform",
+      "Docker",
+      "Kubernetes",
+      "Jenkins"
+    ],
+    "company_name": "VK"
+  },
+  {
+    "name": "Младший инженер DevOps",
+    "salary": 115000,
+    "skills": [
+      "Docker",
+      "Kubernetes",
+      "Helm",
+      "Ansible",
+      "Linux"
+    ],
+    "company_name": "Beeline"
+  },
+  {
+    "name": "Junior DevOps Engineer (Python)",
+    "salary": 125000,
+    "skills": [
+      "Python",
+      "Docker",
+      "CI/CD",
+      "Linux",
+      "Terraform"
+    ],
+    "company_name": "Gazprombank"
+  },
+  {
+    "name": "Стажер DevOps",
+    "salary": 100000,
+    "skills": [
+      "Linux",
+      "Bash",
+      "Git",
+      "Docker",
+      "Networking"
+    ],
+    "company_name": "Tinkoff"
+  },
+  {
+    "name": "Junior Infrastructure Engineer",
+    "salary": 135000,
+    "skills": [
+      "Kubernetes",
+      "Prometheus",
+      "Grafana",
+      "Linux",
+      "Go"
+    ],
+    "company_name": "JetBrains"
+  },
+  {
+    "name": "Junior Site Reliability Engineer",
+    "salary": 140000,
+    "skills": [
+      "Linux",
+      "Python",
+      "PostgreSQL",
+      "Docker",
+      "K8s"
+    ],
+    "company_name": "Yandex"
+  },
+  {
+    "name": "Junior DevOps (Automation)",
+    "salary": 128000,
+    "skills": [
+      "Bash",
+      "Python",
+      "GitLab CI",
+      "Terraform",
+      "Ansible"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Младший системный инженер",
+    "salary": 110000,
+    "skills": [
+      "Linux",
+      "Docker",
+      "SQL",
+      "Zabbix",
+      "Bash"
+    ],
+    "company_name": "Kaspersky"
+  },
+  {
+    "name": "Junior Cloud Engineer",
+    "salary": 130000,
+    "skills": [
+      "GCP",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD"
+    ],
+    "company_name": "Avito"
+  },
+  {
+    "name": "Junior DevOps Engineer (Remote)",
+    "salary": 125000,
+    "skills": [
+      "Docker",
+      "Linux",
+      "Ansible",
+      "Jenkins",
+      "Nginx"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Junior DevOps (Security Focus)",
+    "salary": 140000,
+    "skills": [
+      "Linux",
+      "Docker",
+      "Vault",
+      "CI/CD",
+      "Network Security"
+    ],
+    "company_name": "INTEC"
+  },
+  {
+    "name": "Junior ML Engineer",
+    "salary": 120000,
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Pandas",
+      "Statistics",
+      "Git"
+    ],
+    "company_name": "Alfa-Bank"
+  },
+  {
+    "name": "Младший ML-разработчик",
+    "salary": 110000,
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "Scikit-learn",
+      "NLP",
+      "Computer Vision"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Junior Product Manager",
+    "salary": 100000,
+    "skills": [
+      "Agile",
+      "Product Analytics",
+      "Roadmapping",
+      "SQL",
+      "Figma"
+    ],
+    "company_name": "VK"
+  },
+  {
+    "name": "Junior Information Security Engineer",
+    "salary": 115000,
+    "skills": [
+      "Networking",
+      "OWASP",
+      "SIEM",
+      "Linux",
+      "Cryptography"
+    ],
+    "company_name": "Tinkoff"
+  },
+  {
+    "name": "Младший специалист по ИБ",
+    "salary": 90000,
+    "skills": [
+      "Network Security",
+      "Pentest basics",
+      "SQL",
+      "Python",
+      "Git"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Junior ML Ops",
+    "salary": 130000,
+    "skills": [
+      "Python",
+      "Docker",
+      "MLflow",
+      "DVC",
+      "Kubernetes"
+    ],
+    "company_name": "Wildberries"
+  },
+  {
+    "name": "Junior Data Engineer",
+    "salary": 125000,
+    "skills": [
+      "SQL",
+      "Python",
+      "Spark",
+      "Airflow",
+      "Hadoop"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Junior Technical Writer",
+    "salary": 80000,
+    "skills": [
+      "Documentation",
+      "Markdown",
+      "English",
+      "API",
+      "Git"
+    ],
+    "company_name": "MTS"
+  },
+  {
+    "name": "Junior Project Manager",
+    "salary": 95000,
+    "skills": [
+      "Project management",
+      "Jira",
+      "Trello",
+      "Communication",
+      "Agile"
+    ],
+    "company_name": "Sber"
+  },
+  {
+    "name": "Junior ML Engineer (CV)",
+    "salary": 120000,
+    "skills": [
+      "Python",
+      "OpenCV",
+      "Deep Learning",
+      "NumPy",
+      "Git"
+    ],
+    "company_name": "Kaspersky"
+  }
+]

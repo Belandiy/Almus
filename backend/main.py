@@ -17,10 +17,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Пути к файлам (теперь относительно папки backend)
+# Пути к файлам (используем переменные окружения для гибкости в Docker)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "models", "Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf")
-VACANCIES_PATH = os.path.join(BASE_DIR, "..", "src", "data", "vacancies.json")
+MODEL_PATH = os.getenv("MODEL_PATH", os.path.join(BASE_DIR, "models", "Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"))
+VACANCIES_PATH = os.getenv("VACANCIES_PATH", os.path.join(BASE_DIR, "..", "src", "data", "vacancies.json"))
 
 # Загрузка вакансий
 with open(VACANCIES_PATH, "r", encoding="utf-8") as f:

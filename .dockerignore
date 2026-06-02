@@ -2,6 +2,6 @@ node_modules
 .git
 backend/venv
 backend/__pycache__
-backend/models/*.gguf
+backend/models/
 dist
 .superpowers
