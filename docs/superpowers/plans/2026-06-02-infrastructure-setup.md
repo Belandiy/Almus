@@ -163,7 +163,7 @@ services:
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: minor_db
+      POSTGRES_DB: almus_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -178,7 +178,7 @@ services:
     build:
       context: ./backend
     environment:
-      DATABASE_URL: postgresql://user:password@db:5432/minor_db
+      DATABASE_URL: postgresql://user:password@db:5432/almus_db
       REDIS_URL: redis://redis:6379/0
     volumes:
       - ./backend:/app
@@ -225,7 +225,7 @@ A script to create initial tables (vacancies, users).
 import psycopg2
 import os
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@localhost:5432/minor_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@localhost:5432/almus_db")
 
 def init():
     conn = psycopg2.connect(DATABASE_URL)
