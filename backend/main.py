@@ -1,9 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from llama_cpp import Llama
-import json
 import os
+from openai import AsyncOpenAI
+import json
 import re
 
 app = FastAPI()
@@ -17,23 +17,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Настройки для LM Studio / OpenAI API
+LM_STUDIO_URL = os.getenv("LM_STUDIO_URL", "http://localhost:1234/v1")
+LM_STUDIO_API_KEY = os.getenv("LM_STUDIO_API_KEY", "lm-studio")
+
+client = AsyncOpenAI(base_url=LM_STUDIO_URL, api_key=LM_STUDIO_API_KEY)
+
 # Пути к файлам (используем переменные окружения для гибкости в Docker)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.getenv("MODEL_PATH", os.path.join(BASE_DIR, "models", "Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"))
 VACANCIES_PATH = os.getenv("VACANCIES_PATH", os.path.join(BASE_DIR, "..", "src", "data", "vacancies.json"))
 
 # Загрузка вакансий
 with open(VACANCIES_PATH, "r", encoding="utf-8") as f:
     vacancies_data = json.load(f)
-
-# Инициализация модели
-# n_ctx - размер контекста, n_threads - количество ядер процессора
-llm = Llama(
-    model_path=MODEL_PATH,
-    n_ctx=4096*2,
-    n_threads=4,
-    verbose=False
-)
 
 class ChatRequest(BaseModel):
     messages: list
