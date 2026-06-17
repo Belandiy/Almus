@@ -200,17 +200,18 @@ async def generate_strategy(request: ChatRequest):
         }}
         """
         
-        prompt = f"<|start_header_id|>system<|end_header_id|>\n\n{system_prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{{"
+        messages_for_llm = [
+            {"role": "system", "content": system_prompt}
+        ]
 
-        output = llm(
-            prompt,
+        response = await client.chat.completions.create(
+            model="local-model",
+            messages=messages_for_llm,
             max_tokens=1536,
-            stop=["<|eot_id|>", "<|start_header_id|>"],
-            echo=False,
             temperature=0.1
         )
         
-        json_text = "{" + output["choices"][0]["text"].strip()
+        json_text = response.choices[0].message.content.strip()
         
         try:
             strategy_data = json.loads(json_text)
