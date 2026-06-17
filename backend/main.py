@@ -38,8 +38,6 @@ class ChatRequest(BaseModel):
 @app.post("/chat")
 async def chat(request: ChatRequest):
     try:
-        profile = request.profile
-        
         # Системный промпт: строгая последовательность вопросов для сбора данных
         system_prompt = f"""Ты — AI Career Strategist, профессиональный карьерный ментор. Твоя задача — собрать данные для карьерного плана.
         
@@ -57,25 +55,19 @@ async def chat(request: ChatRequest):
         - Когда узнаешь роль, опыт и навыки, скажи: "Отлично! Я готов составить Ваш персональный карьерный план."
         """
         
-        # Llama 3 Instruct Prompt Format
-        prompt = f"<|start_header_id|>system<|end_header_id|>\n\n{system_prompt}<|eot_id|>"
-        
+        messages = [{"role": "system", "content": system_prompt}]
         for msg in request.messages:
-            llama_role = "user" if msg['role'] == 'user' else "assistant"
-            prompt += f"<|start_header_id|>{llama_role}<|end_header_id|>\n\n{msg['content']}<|eot_id|>"
-            
-        prompt += "<|start_header_id|>assistant<|end_header_id|>\n\n"
+            messages.append({"role": msg['role'], "content": msg['content']})
 
-        # Генерация ответа
-        output = llm(
-            prompt,
+        # Генерация ответа через OpenAI-совместимый API
+        response = await client.chat.completions.create(
+            model="local-model",
+            messages=messages,
             max_tokens=400,
-            stop=["<|eot_id|>", "<|start_header_id|>"],
-            echo=False,
             temperature=0.7
         )
         
-        full_text = output["choices"][0]["text"].strip()
+        full_text = response.choices[0].message.content.strip()
         
         # Ультра-мощный парсинг кнопок
         content = full_text
