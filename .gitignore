@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.*
 
 # Editor directories and files
 .vscode/*
@@ -26,7 +28,17 @@ dist-ssr
 # AI Models
 backend/models/
 *.gguf
+*.bin
+*.onnx
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
 
 .superpowers
 

@@ -35,6 +35,12 @@ class ChatRequest(BaseModel):
     messages: list
     profile: dict
 
+def map_role(role: str) -> str:
+    """Маппинг ролей фронтенда в роли OpenAI API."""
+    if role in ["ai", "assistant"]:
+        return "assistant"
+    return "user"
+
 @app.post("/chat")
 async def chat(request: ChatRequest):
     try:
@@ -57,7 +63,7 @@ async def chat(request: ChatRequest):
         
         messages = [{"role": "system", "content": system_prompt}]
         for msg in request.messages:
-            messages.append({"role": msg['role'], "content": msg['content']})
+            messages.append({"role": map_role(msg['role']), "content": msg['content']})
 
         # Генерация ответа через OpenAI-совместимый API
         response = await client.chat.completions.create(
@@ -200,9 +206,9 @@ async def generate_strategy(request: ChatRequest):
         }}
         """
         
-        messages_for_llm = [
-            {"role": "system", "content": system_prompt}
-        ]
+        messages_for_llm = [{"role": "system", "content": system_prompt}]
+        for msg in request.messages:
+            messages_for_llm.append({"role": map_role(msg['role']), "content": msg['content']})
 
         response = await client.chat.completions.create(
             model="local-model",
