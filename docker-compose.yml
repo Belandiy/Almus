@@ -24,7 +24,6 @@ services:
       VACANCIES_PATH: /app/data/vacancies.json
     volumes:
       - ./backend:/app
-      - ./backend/models:/app/models
       - ./data:/app/data
     ports:
       - "8000:8000"

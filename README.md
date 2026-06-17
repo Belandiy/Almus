@@ -10,14 +10,15 @@
 *   Node.js (v18+)
 *   Python (3.10+)
 *   NPM / PNPM
+*   **LM Studio** (запущенный локально сервер на порту 1234)
 
 ### Установка
 
 1.  Клонируйте репозиторий.
-2.  **Скачайте модель ИИ:**
-    *   Скачайте файл `Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf`.
-    *   Рекомендуемый источник: [Hugging Face (Bartowski)](https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/main/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf) или любой другой GGUF-репозиторий Llama 3.1 8B Instruct.
-    *   Создайте папку `backend/models/` и поместите файл модели туда.
+2.  **Настройте LM Studio:**
+    *   Запустите LM Studio.
+    *   Загрузите модель `Llama 3.1 8B Instruct` (или аналогичную).
+    *   Перейдите в раздел "Local Server" и запустите сервер (по умолчанию на `http://localhost:1234`).
 3.  Установите зависимости фронтенда:
     ```bash
     npm install
