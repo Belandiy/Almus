@@ -32,3 +32,5 @@ backend/models/
 
 # Docker data
 .docker-data/
+
+*.pyc
