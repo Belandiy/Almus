@@ -1,10 +1,8 @@
 services:
   db:
     image: postgres:16-alpine
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: almus_db
+    env_file:
+      - .env
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -18,11 +16,8 @@ services:
   backend:
     build:
       context: ./backend
-    environment:
-      DATABASE_URL: postgresql://user:password@db:5432/almus_db
-      REDIS_URL: redis://redis:6379/0
-      VACANCIES_PATH: /app/data/vacancies.json
-      LM_STUDIO_URL: http://host.docker.internal:1234/v1
+    env_file:
+      - .env
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:
