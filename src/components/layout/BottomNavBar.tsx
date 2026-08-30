@@ -6,6 +6,7 @@ const BottomNavBar: React.FC = () => {
 
   const tabs = [
     { id: 'strategy', label: 'Стратегия', icon: 'tactic' },
+    { id: 'projects', label: 'Практика', icon: 'assignment' },
     { id: 'jobs', label: 'Вакансии', icon: 'work' },
     { id: 'profile', label: 'Профиль', icon: 'person' },
   ];

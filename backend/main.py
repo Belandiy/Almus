@@ -232,6 +232,33 @@ async def generate_strategy(request: ChatRequest):
         print(f"Strategy Error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
+MOCK_PROJECTS = [
+    {
+        "id": 1,
+        "company_name": "TechStart Inc",
+        "title": "Разработка лендинга для SaaS",
+        "description": "Нужно разработать адаптивный лендинг на React/Tailwind по готовому дизайну в Figma. Интеграция формы подписки.",
+        "budget": 20000,
+        "mode": "single_team",
+        "required_skills": ["react", "tailwind", "figma"],
+        "status": "open"
+    },
+    {
+        "id": 2,
+        "company_name": "DataGenius",
+        "title": "Парсинг каталога интернет-магазина",
+        "description": "Скрипт на Python для сбора цен с 3 конкурентов. Формат выгрузки CSV. Соревновательный режим - кто сделает быстрее и качественнее.",
+        "budget": 15000,
+        "mode": "competition",
+        "required_skills": ["python", "beautifulsoup", "pandas"],
+        "status": "open"
+    }
+]
+
+@app.get("/projects")
+async def get_projects():
+    return {"projects": MOCK_PROJECTS}
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
