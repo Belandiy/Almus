@@ -73,7 +73,15 @@ async def chat(request: ChatRequest):
             temperature=0.7
         )
         
-        full_text = response.choices[0].message.content.strip()
+        full_text = response.choices[0].message.content
+        if full_text is None:
+            full_text = ""
+        
+        # Удаляем теги <think> (размышления моделей типа DeepSeek-R1)
+        full_text = re.sub(r'<think>.*?</think>', '', full_text, flags=re.DOTALL | re.IGNORECASE)
+        full_text = full_text.strip()
+        
+        print(f"DEBUG: LM Studio raw response (after think removal): {repr(full_text)}")
         
         # Ультра-мощный парсинг кнопок
         content = full_text
@@ -95,6 +103,8 @@ async def chat(request: ChatRequest):
         content = re.sub(r'(?:Например|Выберите|Варианты|Кнопки):?\s*$', '', content, flags=re.IGNORECASE).strip()
         content = re.sub(r'\s{2,}', ' ', content)
         content = content.rstrip(': ,')
+
+        print(f"DEBUG: Parsed content: {repr(content)}, options: {options}")
 
         return {
             "content": content if content else full_text,
@@ -217,7 +227,11 @@ async def generate_strategy(request: ChatRequest):
             temperature=0.1
         )
         
-        json_text = response.choices[0].message.content.strip()
+        json_text = response.choices[0].message.content
+        if json_text is None:
+            json_text = ""
+        # Удаляем теги <think> (размышления моделей типа DeepSeek-R1)
+        json_text = re.sub(r'<think>.*?</think>', '', json_text, flags=re.DOTALL | re.IGNORECASE).strip()
         
         try:
             strategy_data = json.loads(json_text)
