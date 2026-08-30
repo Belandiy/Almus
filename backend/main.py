@@ -69,19 +69,23 @@ async def chat(request: ChatRequest):
         response = await client.chat.completions.create(
             model="local-model",
             messages=messages,
-            max_tokens=400,
+            max_tokens=2048,
             temperature=0.7
         )
         
         full_text = response.choices[0].message.content
         if full_text is None:
             full_text = ""
+            
+        print(f"DEBUG: LM Studio raw response (BEFORE think removal): {repr(full_text)}")
         
         # Удаляем теги <think> (размышления моделей типа DeepSeek-R1)
         full_text = re.sub(r'<think>.*?</think>', '', full_text, flags=re.DOTALL | re.IGNORECASE)
-        full_text = full_text.strip()
+        # Удаляем не закрытый тег <think> если модель оборвалась
+        full_text = re.sub(r'<think>.*$', '', full_text, flags=re.DOTALL | re.IGNORECASE)
         
-        print(f"DEBUG: LM Studio raw response (after think removal): {repr(full_text)}")
+        full_text = full_text.strip()
+        print(f"DEBUG: LM Studio raw response (AFTER think removal): {repr(full_text)}")
         
         # Ультра-мощный парсинг кнопок
         content = full_text
@@ -223,7 +227,7 @@ async def generate_strategy(request: ChatRequest):
         response = await client.chat.completions.create(
             model="local-model",
             messages=messages_for_llm,
-            max_tokens=1536,
+            max_tokens=3000,
             temperature=0.1
         )
         
@@ -231,7 +235,11 @@ async def generate_strategy(request: ChatRequest):
         if json_text is None:
             json_text = ""
         # Удаляем теги <think> (размышления моделей типа DeepSeek-R1)
-        json_text = re.sub(r'<think>.*?</think>', '', json_text, flags=re.DOTALL | re.IGNORECASE).strip()
+        json_text = re.sub(r'<think>.*?</think>', '', json_text, flags=re.DOTALL | re.IGNORECASE)
+        # Удаляем не закрытый тег <think> если модель оборвалась
+        json_text = re.sub(r'<think>.*$', '', json_text, flags=re.DOTALL | re.IGNORECASE)
+        
+        json_text = json_text.strip()
         
         try:
             strategy_data = json.loads(json_text)
