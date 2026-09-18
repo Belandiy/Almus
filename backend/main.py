@@ -1,9 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from llama_cpp import Llama
-import json
 import os
+from openai import AsyncOpenAI
+import json
 import re
 
 app = FastAPI()
@@ -17,33 +17,33 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Настройки для LM Studio / OpenAI API
+LM_STUDIO_URL = os.getenv("LM_STUDIO_URL", "http://localhost:1234/v1")
+LM_STUDIO_API_KEY = os.getenv("LM_STUDIO_API_KEY", "lm-studio")
+
+client = AsyncOpenAI(base_url=LM_STUDIO_URL, api_key=LM_STUDIO_API_KEY)
+
 # Пути к файлам (используем переменные окружения для гибкости в Docker)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.getenv("MODEL_PATH", os.path.join(BASE_DIR, "models", "Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"))
 VACANCIES_PATH = os.getenv("VACANCIES_PATH", os.path.join(BASE_DIR, "..", "src", "data", "vacancies.json"))
 
 # Загрузка вакансий
 with open(VACANCIES_PATH, "r", encoding="utf-8") as f:
     vacancies_data = json.load(f)
 
-# Инициализация модели
-# n_ctx - размер контекста, n_threads - количество ядер процессора
-llm = Llama(
-    model_path=MODEL_PATH,
-    n_ctx=4096*2,
-    n_threads=4,
-    verbose=False
-)
-
 class ChatRequest(BaseModel):
     messages: list
     profile: dict
 
+def map_role(role: str) -> str:
+    """Маппинг ролей фронтенда в роли OpenAI API."""
+    if role in ["ai", "assistant"]:
+        return "assistant"
+    return "user"
+
 @app.post("/chat")
 async def chat(request: ChatRequest):
     try:
-        profile = request.profile
-        
         # Системный промпт: строгая последовательность вопросов для сбора данных
         system_prompt = f"""Ты — AI Career Strategist, профессиональный карьерный ментор. Твоя задача — собрать данные для карьерного плана.
         
@@ -61,25 +61,31 @@ async def chat(request: ChatRequest):
         - Когда узнаешь роль, опыт и навыки, скажи: "Отлично! Я готов составить Ваш персональный карьерный план."
         """
         
-        # Llama 3 Instruct Prompt Format
-        prompt = f"<|start_header_id|>system<|end_header_id|>\n\n{system_prompt}<|eot_id|>"
-        
+        messages = [{"role": "system", "content": system_prompt}]
         for msg in request.messages:
-            llama_role = "user" if msg['role'] == 'user' else "assistant"
-            prompt += f"<|start_header_id|>{llama_role}<|end_header_id|>\n\n{msg['content']}<|eot_id|>"
-            
-        prompt += "<|start_header_id|>assistant<|end_header_id|>\n\n"
+            messages.append({"role": map_role(msg['role']), "content": msg['content']})
 
-        # Генерация ответа
-        output = llm(
-            prompt,
-            max_tokens=400,
-            stop=["<|eot_id|>", "<|start_header_id|>"],
-            echo=False,
+        # Генерация ответа через OpenAI-совместимый API
+        response = await client.chat.completions.create(
+            model="local-model",
+            messages=messages,
+            max_tokens=4096,
             temperature=0.7
         )
         
-        full_text = output["choices"][0]["text"].strip()
+        full_text = response.choices[0].message.content
+        if full_text is None:
+            full_text = ""
+
+        print(f"DEBUG: LM Studio raw response (BEFORE think removal): {repr(full_text)}")
+
+        # Удаляем теги <think> (размышления моделей типа DeepSeek-R1)
+        full_text = re.sub(r'<think>.*?</think>', '', full_text, flags=re.DOTALL | re.IGNORECASE)
+        # Удаляем не закрытый тег <think> если модель оборвалась
+        full_text = re.sub(r'<think>.*$', '', full_text, flags=re.DOTALL | re.IGNORECASE)
+
+        full_text = full_text.strip()
+        print(f"DEBUG: LM Studio raw response (AFTER think removal): {repr(full_text)}")
         
         # Ультра-мощный парсинг кнопок
         content = full_text
@@ -212,17 +218,26 @@ async def generate_strategy(request: ChatRequest):
         }}
         """
         
-        prompt = f"<|start_header_id|>system<|end_header_id|>\n\n{system_prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{{"
+        messages_for_llm = [{"role": "system", "content": system_prompt}]
+        for msg in request.messages:
+            messages_for_llm.append({"role": map_role(msg['role']), "content": msg['content']})
 
-        output = llm(
-            prompt,
-            max_tokens=1536,
-            stop=["<|eot_id|>", "<|start_header_id|>"],
-            echo=False,
+        response = await client.chat.completions.create(
+            model="local-model",
+            messages=messages_for_llm,
+            max_tokens=3000,
             temperature=0.1
         )
         
-        json_text = "{" + output["choices"][0]["text"].strip()
+        json_text = response.choices[0].message.content
+        if json_text is None:
+            json_text = ""
+        # Удаляем теги <think> (размышления моделей типа DeepSeek-R1)
+        json_text = re.sub(r'<think>.*?</think>', '', json_text, flags=re.DOTALL | re.IGNORECASE)
+        # Удаляем не закрытый тег <think> если модель оборвалась
+        json_text = re.sub(r'<think>.*$', '', json_text, flags=re.DOTALL | re.IGNORECASE)
+
+        json_text = json_text.strip()
         
         try:
             strategy_data = json.loads(json_text)
@@ -240,3 +255,30 @@ async def generate_strategy(request: ChatRequest):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+MOCK_PROJECTS = [
+    {
+        "id": 1,
+        "company_name": "TechStart Inc",
+        "title": "Разработка лендинга для SaaS",
+        "description": "Нужно разработать адаптивный лендинг на React/Tailwind по готовому дизайну в Figma. Интеграция формы подписки.",
+        "budget": 20000,
+        "mode": "single_team",
+        "required_skills": ["react", "tailwind", "figma"],
+        "status": "open"
+    },
+    {
+        "id": 2,
+        "company_name": "DataGenius",
+        "title": "Парсинг каталога интернет-магазина",
+        "description": "Скрипт на Python для сбора цен с 3 конкурентов. Формат выгрузки CSV. Соревновательный режим - кто сделает быстрее и качественнее.",
+        "budget": 15000,
+        "mode": "competition",
+        "required_skills": ["python", "beautifulsoup", "pandas"],
+        "status": "open"
+    }
+]
+
+@app.get("/projects")
+async def get_projects():
+    return {"projects": MOCK_PROJECTS}

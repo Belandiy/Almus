@@ -1,11 +1,13 @@
 import React from 'react';
 import { useAppContext } from '../../hooks/useAppContext';
+import type { Screen } from '../../context/AppContext';
 
 const BottomNavBar: React.FC = () => {
   const { currentScreen, setCurrentScreen } = useAppContext();
 
   const tabs = [
     { id: 'strategy', label: 'Стратегия', icon: 'tactic' },
+    { id: 'projects', label: 'Практика', icon: 'assignment' },
     { id: 'jobs', label: 'Вакансии', icon: 'work' },
     { id: 'profile', label: 'Профиль', icon: 'person' },
   ];
@@ -17,7 +19,7 @@ const BottomNavBar: React.FC = () => {
         return (
           <button
             key={tab.id}
-            onClick={() => setCurrentScreen(tab.id as any)}
+            onClick={() => setCurrentScreen(tab.id as Screen)}
             className={`flex flex-col items-center justify-center transition-all duration-300 active:scale-90 p-2 min-w-[64px] ${
               isActive 
                 ? 'text-primary bg-primary-container/20 rounded-full px-md py-xs' 
