@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo } from 'react';
+import React, { useState,  useMemo } from 'react';
 import { motion, useMotionValue, useTransform, AnimatePresence } from 'framer-motion';
 import type { PanInfo } from 'framer-motion';
 import { X, Heart, Bookmark } from 'lucide-react';
@@ -44,7 +44,7 @@ const JobsScreen: React.FC = () => {
 
         return {
           id: `real-${index}`,
-          company: (v as any).company_name || 'IT Компания',
+          company: (v as Record<string, unknown>).company_name || 'IT Компания',
           role: v.name,
           salary: `${v.salary.toLocaleString()} ₽`,
           location: index % 3 === 0 ? 'Удаленно' : 'Москва',
@@ -75,7 +75,7 @@ const JobsScreen: React.FC = () => {
     }
   };
 
-  const swipe = useCallback((direction: 'left' | 'right') => {
+  const swipe = (direction: 'left' | 'right') => {
     const job = realJobs[currentIndex];
     if (!job) return;
 
@@ -87,7 +87,7 @@ const JobsScreen: React.FC = () => {
 
     setCurrentIndex((prev) => prev + 1);
     x.set(0);
-  }, [currentIndex, realJobs, toggleLikedJob, toggleRejectedJob, x]);
+  };
 
   const currentJob = realJobs[currentIndex];
   const nextJob = realJobs[currentIndex + 1];

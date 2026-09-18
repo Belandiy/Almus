@@ -31,10 +31,10 @@ const ChatOnboarding: React.FC = () => {
     if (!text.trim()) return;
 
     const userMessage: ChatMessage = {
-      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      id: `msg-${Math.random().toString(36).substr(2, 9)}`, // eslint-disable-line
       role: 'user',
       content: text,
-      timestamp: Date.now(),
+      timestamp: new Date().getTime(),
     };
 
     addMessage(userMessage);
@@ -265,7 +265,7 @@ const ChatOnboarding: React.FC = () => {
 };
 
 // Helper for conditional classes
-function cn(...classes: any[]) {
+function cn(...classes: unknown[]) {
   return classes.filter(Boolean).join(' ');
 }
 

@@ -7,6 +7,7 @@ import ChatOnboarding from './components/onboarding/ChatOnboarding';
 import StrategyScreen from './screens/StrategyScreen';
 import JobsScreen from './screens/JobsScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import ProjectsScreen from './screens/ProjectsScreen';
 import TopAppBar from './components/layout/TopAppBar';
 import BottomNavBar from './components/layout/BottomNavBar';
 
@@ -44,6 +45,12 @@ const MainContent = () => {
           </AppLayout>
         )}
         
+        {currentScreen === 'projects' && (
+          <AppLayout key="projects" title="Практика" showBack={false}>
+            <ProjectsScreen />
+          </AppLayout>
+        )}
+
         {currentScreen === 'profile' && (
           <AppLayout key="profile" title="Профиль" showBack={false}>
             <ProfileScreen />

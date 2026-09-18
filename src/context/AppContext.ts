@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 
-export type Screen = 'welcome' | 'choice' | 'chat' | 'strategy' | 'jobs' | 'profile';
+export type Screen = 'welcome' | 'choice' | 'chat' | 'strategy' | 'jobs' | 'profile' | 'projects';
 
 export interface ChatMessage {
   id: string;
