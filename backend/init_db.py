@@ -17,6 +17,17 @@ def init():
                 skills TEXT[],
                 description TEXT
             );
+
+            CREATE TABLE IF NOT EXISTS projects (
+                id SERIAL PRIMARY KEY,
+                company_name TEXT NOT NULL,
+                title TEXT NOT NULL,
+                description TEXT,
+                budget INTEGER,
+                mode TEXT,
+                required_skills TEXT[],
+                status TEXT DEFAULT 'open'
+            );
         """)
         
         conn.commit()
