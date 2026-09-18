@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAppContext } from '../../hooks/useAppContext';
-import { Screen } from '../../context/AppContext';
+import type { Screen } from '../../context/AppContext';
 
 const BottomNavBar: React.FC = () => {
   const { currentScreen, setCurrentScreen } = useAppContext();
